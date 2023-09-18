@@ -139,7 +139,7 @@ sol_ggn = iterate!(method_ggn, model_ggn, reg_name, hμ; max_iter=100, x_tol=1e-
 sol_ggn.x
 ```
 
-TODO: Add a simple sparse group lasso example... (for now, see example from paper in `/examples/paper`).
+TODO: Add a simple sparse group lasso example... (for now, see example from paper in <a style="text-decoration:underline" href="https://github.com/adeyemiadeoye/SelfConcordantSmoothOptimization.jl/tree/main/examples/paper" target="_blank">`/examples/paper`<i class="fab fa-github gh-icon"></i></a>).
 
 ## Implementation details and recommendations
 Below is a summary of functions $$f$$ supported by the algorithms implemented in the package:

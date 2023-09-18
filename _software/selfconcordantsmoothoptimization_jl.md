@@ -160,6 +160,16 @@ For more details and insights on the approach implemented in this package, pleas
 
 ## Citing
 If you use `SelfConcordantSmoothOptimization.jl` in your work, particularly the algorithms listed above, we kindly request that you cite the following paper:
+{% details Click here for BibTeX %}
+```
+@article{adeoye2023self,
+  title={Self-concordant Smoothing for Convex Composite Optimization},
+  author={Adeoye, Adeyemi D and Bemporad, Alberto},
+  journal={arXiv preprint arXiv:2309.01781},
+  year={2023}
+}
+```
+{% enddetails %}
 <div class="publications">
 {% bibliography -f journal -q @*[key^=adeoye2023self]* %}
 {% bibliography -f conference -q @*[key^=adeoye2023self]* %}

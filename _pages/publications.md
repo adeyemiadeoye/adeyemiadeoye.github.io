@@ -6,6 +6,8 @@ description: academic writtings by categories in reversed chronological order.
 years: [2023, 2020]
 nav: true
 nav_order: 1
+toc:
+  sidebar: left
 ---
 <!-- _pages/publications.md -->
 <div class="publications">

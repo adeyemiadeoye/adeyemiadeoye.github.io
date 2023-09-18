@@ -21,3 +21,7 @@ group :other_plugins do
     gem 'httparty'
     gem 'feedjira'
 end
+
+gem "jekyll-jupyter-notebook", "~> 0.0.5"
+
+gem "jekyll-toc", "~> 0.18.0"

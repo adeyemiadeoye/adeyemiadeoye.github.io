@@ -6,16 +6,10 @@ img:
 github: https://github.com/adeyemiadeoye/SelfConcordantSmoothOptimization.jl
 importance: 1
 category: optimization
+# related_publications: adeoye2023self
 toc:
   sidebar: left
 ---
-
-- [Installation](#installation)
-- [Usage example](#usage-example)
-    - [A simple sparse logistic regression problem](#a-simple-sparse-logistic-regression-problem)
-- [Implementation details and recommendations](#implementation-details-and-recommendations)
-- [Citing](#citing)
-- [Contributing](#contributing)
 
 <a style="text-decoration:underline" href="https://github.com/adeyemiadeoye/SelfConcordantSmoothOptimization.jl" target="_blank">SelfConcordantSmoothOptimization.jl<i class="fab fa-github gh-icon"></i></a> is a Julia package that implements the self-concordant regularization (SCORE) technique for nonsmooth convex optimization introduced in <a style="text-decoration:none" href="https://arxiv.org/abs/2309.01781" target="_blank">this paper</a>. In particular, `SelfConcordantSmoothOptimization.jl` considers problems of the form
 
@@ -166,15 +160,12 @@ For more details and insights on the approach implemented in this package, pleas
 
 ## Citing
 If you use `SelfConcordantSmoothOptimization.jl` in your work, particularly the algorithms listed above, we kindly request that you cite the following paper:
-
-```
-@article{adeoye2023self,
-  title={Self-concordant Smoothing for Convex Composite Optimization},
-  author={Adeoye, Adeyemi D and Bemporad, Alberto},
-  journal={arXiv preprint arXiv:2309.01781},
-  year={2023}
-}
-```
+<div class="publications">
+{% bibliography -f journal -q @*[key^=adeoye2023self]* %}
+{% bibliography -f conference -q @*[key^=adeoye2023self]* %}
+{% bibliography -f preprint -q @*[key^=adeoye2023self]* %}
+{% bibliography -f technical -q @*[key^=adeoye2023self]* %}
+</div>
 
 ## Contributing
 Please use the [Github issue tracker](https://github.com/adeyemiadeoye/SelfConcordantSmoothOptimization.jl/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc) for reporting any issues. All types of issues are welcome including bug reports, feature requests, implementation for a specific research problem, etc.

@@ -9,7 +9,7 @@ display_categories: [convex optimization, system identification &amp; control, n
 ---
 
 {%- for category in page.display_categories %}
-<h3 class="category">{{ category }}</h3>
+<h2 class="category">{{ category }}</h2>
 {%- assign categorized_notes = site.notes | where: "category", category -%}
 <ul>
 {%- for item in categorized_notes %}

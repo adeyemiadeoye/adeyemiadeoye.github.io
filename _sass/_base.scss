@@ -4,13 +4,7 @@
 
 // Typography
 
-// p, h1, h2, h3, h4, h5, h6, em, div, li, span, strong {
-//   color: var(--global-text-color);
-//   font-family: Verdana, Arial, 'PT Sans', BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif, -apple-system, 'IBM Plex Sans', 'Josefin Sans', 'Merriweather', 'Gentium Book Plus', 'Ubuntu', 'Consolas';
-//   // font-size: 20px;
-// }
-
-p, h1, h2, em, li, div, span, strong { font-family: 'PT Sans', Verdana, Arial, Geneva, sans-serif;} h3 { font-family: 'IBM Plex Sans', Verdana, Geneva, sans-serif; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } blockquote { font-family: Geneva; font-size: 17.5px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 25px; } pre { font-family: 'IBM Plex Sans'; font-size: 16px; display: block; }
+p, h1, h2, em, li, div, span, strong { font-family: 'IBM Plex Sans', sans-serif; font-weight: 400} h3 { font-family: 'IBM Plex Sans', sans-serif; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } blockquote { font-family: Geneva; font-size: 17.5px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 25px; } pre { font-family: 'IBM Plex Sans'; font-size: 16px; display: block; }
 
 hr {
   border-top: 1px solid var(--global-divider-color);
@@ -25,6 +19,7 @@ table {
   }
   td {
     font-size: 1rem;
+    font-weight: 400;
   }
 }
 

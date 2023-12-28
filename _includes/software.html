@@ -13,7 +13,8 @@
           alt="software thumbnail" -%}
         {%- endif %}
         <div class="card-body">
-          <h2 class="card-title text-lowercase">{{ software.title }}</h2>
+          <!-- <h2 class="card-title text-lowercase">{{ software.title }}</h2> -->
+          <h2 class="card-title">{{ software.title }}</h2>
           <p class="card-text">{{ software.description }}</p>
           <div class="row ml-1 mr-1 p-0">
             {%- if software.github -%}

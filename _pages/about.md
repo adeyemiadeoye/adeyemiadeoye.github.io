@@ -1,6 +1,6 @@
 ---
 layout: about
-title: home
+title: Home
 permalink: /
 subtitle: #PhD student at <a style="text-decoration:none" href="https://www.imtlucca.it/en/adeyemi.adeoye" target="_blank">IMT Lucca</a>
 
@@ -39,11 +39,11 @@ I received my bachelor’s degree in Mathematics in 2016 from the <a style="text
 &emsp;
 <a href="https://adeyemiadeoye.github.io/cv/" title="CV" role="button" target="_self"><i class="ai ai-cv-square ai-1x z-depth-1"></i> Curriculum Vitae </a>
 
-research interests
+Research interests
 ---
 <ul>
 <li>Approximate second-order optimization methods for machine learning</li>
-<li>Efficient second-order algorithms for nonsmooth convex composite optimization</li>
+<li>Efficient algorithms for nonsmooth convex composite optimization</li>
 <li>Neural networks for identication and control of dynamical systems</li>
 </ul>
 &emsp;&emsp;

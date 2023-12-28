@@ -11,6 +11,12 @@ toc:
   sidebar: left
 ---
 
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/prox-SCORE.svg" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
+
 <a style="text-decoration:underline" href="https://github.com/adeyemiadeoye/SelfConcordantSmoothOptimization.jl" target="_blank">SelfConcordantSmoothOptimization.jl<i class="fab fa-github gh-icon"></i></a> is a Julia package that implements the self-concordant regularization (SCORE) technique for nonsmooth convex optimization introduced in <a style="text-decoration:none" href="https://arxiv.org/abs/2309.01781" target="_blank">this paper</a>. In particular, `SelfConcordantSmoothOptimization.jl` considers problems of the form
 
 $$
@@ -23,8 +29,9 @@ where $$f\colon \mathbb{R}^n \to \mathbb{R}$$ is smooth and convex, and $$g\colo
 Install the package via Julia's `REPL` with
 
 ```julia
-julia> ]
-pkg> add SelfConcordantSmoothOptimization
+using Pkg
+
+Pkg.add("SelfConcordantSmoothOptimization")
 ```
 
 ## Usage example
@@ -47,7 +54,7 @@ y = map(x -> x==unique_y[1] ? -1 : 1, y);
 x0 = randn(m);
 
 # Define objective function and choose problem parameters
-f(x) = 1/m*sum(log.(1 .+ exp.(-y .* (A*x))));
+f(A, y, x) = 1/m*sum(log.(1 .+ exp.(-y .* (A*x))));
 
 # choose problem parameters
 reg_name = "l1";
@@ -70,7 +77,7 @@ To use the `ProxGGNSCORE` algorithm, a model output function $$\mathcal{M}(A,x)$
 
 ```julia
 # f as defined above
-f(x) = 1/m*sum(log.(1 .+ exp.(-y .* (A*x))));
+f(A, y, x) = 1/m*sum(log.(1 .+ exp.(-y .* (A*x))));
 # f as a function of y and yhat
 f(y, yhat) = -1/m*sum(y .* log.(yhat) .+ (1 .- y) .* log.(1 .- yhat))
 # where yhat = Mfunc(A, x) is defined by the model output function
@@ -92,7 +99,7 @@ By default, this package computes derivatives using [`ForwardDiff.jl`](https://g
 In the example above:
 
 ```julia
-f(x) = 1/m*sum(log.(1 .+ exp.(-y .* (A*x))));
+f(A, y, x) = 1/m*sum(log.(1 .+ exp.(-y .* (A*x))));
 
 S(x) = exp.(-y .* (A*x));
 # gradient of f wrt x:
@@ -132,8 +139,7 @@ method_ggn = ProxGGNSCORE();
 sol_ggn = iterate!(method_ggn, model_ggn, reg_name, hμ; max_iter=100, x_tol=1e-6, f_tol=1e-6);
 sol_ggn.x
 ```
-
-TODO: Add a simple sparse group lasso example... (for now, see example from paper in <a style="text-decoration:underline" href="https://github.com/adeyemiadeoye/SelfConcordantSmoothOptimization.jl/tree/main/examples/paper" target="_blank">`/examples/paper`<i class="fab fa-github gh-icon"></i></a>).
+(For sparse group lasso example, see example from paper in <a style="text-decoration:underline" href="https://github.com/adeyemiadeoye/SelfConcordantSmoothOptimization.jl/tree/main/examples" target="_blank">`/examples`<i class="fab fa-github gh-icon"></i></a>).
 
 ## Implementation details and recommendations
 Below is a summary of functions $$f$$ supported by the algorithms implemented in the package:
@@ -143,6 +149,13 @@ Below is a summary of functions $$f$$ supported by the algorithms implemented in
 | `ProxNSCORE`   	| Any twice continuously differentiable function.                                                                                                                                                                                        		|
 | `ProxGGNSCORE` 	| Any twice continuously differentiable function that can be expressed in the form $$f(x) =  \sum\limits_{i=1}^{m}\ell(y_i,\hat{y}_i)$$ where $$\ell$$ is a loss function that measures a data-misfit.<br>Requires a model $$\mathcal{M}(A,x)$$ that computes the predictions $$\hat{y}_i$$. 		|
 | `ProxQNSCORE`  	| Any twice continuously differentiable function (currently not recommended).<br>Currently not recommended.                                                                                                                                                                                       		|
+
+### Optional arguments
+
+| Arg      	| Description & usage                                                                                                                                                                                                                                 |
+|----------------	|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
+| `ss_type`   	| Value `1` and with a given `L` in `Problem` sets $$\alpha=\min\{1/L, 1\}$$.<br> Value `1` without setting `L` in `Problem` sets $$\alpha$$ to the value in `iterate!` (or a default value $0.5$ if not set).<br> Value `2` uses the "inverse" of Barzilai-Borwein method to set $$\alpha$$ (Not recommended).<br> Value `3` uses a line-search method to choose $\mathrm{\alpha}$.<br> Default value: `1`.<br> e.g. `method = ProxGGNSCORE(ss_type=1)`<br>                                                                                                                                                                                       		|
+| `use_prox` 	| Value `true` uses the proximal scheme as described in the paper.<br> Value `false` skips the proximal step and takes only the associated Newton-type/gradient-based step.<br> Default value: `true`.<br> e.g. `method = ProxGGNSCORE(use_prox=true)`<br>                                                                                                                                                                                       		|
 
 
 As the package name and description imply, the implemented algorithms use a generalized self-concordant smooth approximation $$g_s$$ of $$g$$ in their procedures. The algorithms do this for specific regularization functions that are specified by `reg_name` that takes a string value in the `iterate!` function. We summarize below currently implemented regularization functions, as well as the corresponding smoothing functions $$g_s$$.
@@ -154,7 +167,7 @@ As the package name and description imply, the implemented algorithms use a gene
 | `"gl"`       	| `PHuberSmootherGL(μ, model)`                                                                          	| For sparse group lasso regularizer <br> $$\mu>0$$ 	|
 | `"indbox"`       	| `PHuberSmootherIndBox(lb,ub,μ)`                                                                          	| `lb`: lower bound in the box constraints <br> `ub`: upper bound in the box constraints <br> $$\mu>0$$ 	|
 
-- `PHuberSmootherL1L2`, `PHuberSmootherGL`, `PHuberSmootherIndBox` are highly recommended.
+- `PHuberSmootherL1L2`, `PHuberSmootherGL`, `ExponentialSmootherIndBox` are recommended.
 
 For more details and insights on the approach implemented in this package, please see the associated paper in [Citing](#citing) below.
 

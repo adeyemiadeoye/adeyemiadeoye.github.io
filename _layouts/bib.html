@@ -28,7 +28,15 @@
           {{reference}}
         {%- else %}
           <!-- Title -->
-          <div class="title"><a style="color: var(--global-theme-color)" href="{{entry.pdf}}">{{entry.title}}</a></div>
+          {%- assign pdf_link = nil -%}
+          {%- if entry.pdf %}
+            {% if entry.pdf contains '://' -%}
+            {%- assign pdf_link = entry.pdf -%}
+            {%- else -%}
+            {%- assign pdf_link = entry.pdf | prepend: '/assets/pdf/' | relative_url -%}
+            {%- endif %}
+          {%- endif %}
+          <div class="title"><a style="color: var(--global-theme-color)" href="{{ pdf_link }}">{{entry.title}}</a></div>
           <!-- Author -->
           <div class="author">
           {% assign author_array_size = entry.author_array | size %}

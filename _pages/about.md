@@ -39,12 +39,21 @@ I received my bachelor’s degree in Mathematics in 2016 from the <a style="text
 &emsp;
 <a href="https://adeyemiadeoye.github.io/cv/" title="CV" role="button" target="_self"><i class="ai ai-cv-square ai-1x z-depth-1"></i> Curriculum Vitae </a>
 
-Research interests
+Research topics
 ---
 <ul>
-<li>Approximate second-order optimization methods for machine learning</li>
-<li>Efficient algorithms for nonsmooth convex composite optimization</li>
-<li>Neural networks for identication and control of dynamical systems</li>
+<li>Mathematics of machine learning and its applications
+  <ul>
+  <li>Optimization algorithms for machine learning</li>
+  <li>Neural networks for identication and control of dynamical systems</li>
+  </ul>
+</li>
+<li>Computational mathematics and its applications
+  <ul>
+  <li>Computational magnetohydrodynamics</li>
+  <li>Computational fluid dynamics</li>
+  </ul>
+</li>
 </ul>
 &emsp;&emsp;
 <a href="https://adeyemiadeoye.github.io/papers/" title="Papers" role="button" target="_self"> :memo: Papers </a> &emsp;&emsp;

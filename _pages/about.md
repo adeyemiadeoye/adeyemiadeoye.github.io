@@ -41,13 +41,15 @@ I received my bachelor’s degree in Mathematics in 2016 from the <a style="text
 
 Research topics
 ---
-<ul>
+<ul style="width:50%; float:left;">
 <li>Mathematics of machine learning and its applications
   <ul>
   <li>Optimization algorithms for machine learning</li>
   <li>Neural networks for identication and control of dynamical systems</li>
   </ul>
 </li>
+</ul>
+<ul style="width:50%; float:left;">
 <li>Computational mathematics and its applications
   <ul>
   <li>Computational magnetohydrodynamics</li>

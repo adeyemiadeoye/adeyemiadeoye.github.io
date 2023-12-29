@@ -44,8 +44,8 @@ Research topics
 <ul style="width:50%; float:left;">
 <li>Mathematics of machine learning and its applications
   <ul>
-  <li>Optimization algorithms for machine learning</li>
-  <li>Neural networks for identication and control of dynamical systems</li>
+  <li>Efficient optimization algorithms for machine learning</li>
+  <li>Data-driven identification and control of complex dynamical systems</li>
   </ul>
 </li>
 </ul>
@@ -63,5 +63,4 @@ Research topics
 <a href="https://adeyemiadeoye.github.io/software/" title="Papers" role="button" target="_self"><i class="fa fa-code"></i> Software </a>
 &emsp;&emsp;
 <a href="https://scholar.google.com/citations?user={{ site.scholar_userid }}&view_op=list_works&sortby=pubdate" title="Google Scholar"><i class="ai ai-google-scholar"></i> Google Scholar </a>
-<div class="publications">
 <hr>

@@ -41,6 +41,7 @@ I received my bachelor’s degree in Mathematics in 2016 from the <a style="text
 
 Research topics
 ---
+I am interested in the mathematics of machine learning (mathematical optimization) and its applications. My past and current research span the following topics:
 <ul style="width:50%; float:left;">
 <li>Mathematics of machine learning and its applications
   <ul>
@@ -56,8 +57,8 @@ Research topics
   <li>Computational fluid dynamics</li>
   </ul>
 </li>
+<br>
 </ul>
-
 &emsp;&emsp;
 <a href="https://adeyemiadeoye.github.io/papers/" title="Papers" role="button" target="_self"> :memo: Papers </a> &emsp;&emsp;
 <a href="https://adeyemiadeoye.github.io/software/" title="Papers" role="button" target="_self"><i class="fa fa-code"></i> Software </a>

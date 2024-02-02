@@ -2,7 +2,7 @@
 layout: cv
 permalink: /cv/
 title: CV
-description: Last updated 27-12-2023.
+description: #Last updated 27-12-2023.
 nav: true
 nav_order: 5
 cv_pdf: Adeyemi_CV.pdf

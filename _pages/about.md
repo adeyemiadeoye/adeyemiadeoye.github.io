@@ -22,7 +22,7 @@ social: true  # includes social icons at the bottom of the page
 
 I am a PhD student at <a style="text-decoration:none" href="https://www.imtlucca.it/en" target="_blank">IMT Lucca</a> in the Dynamical Systems, Control, and Optimization (<a style="text-decoration:none" href="http://dysco.imtlucca.it/" target="_blank">DYSCO</a>) research group under the supervision of <a style="text-decoration:none" href="http://cse.lab.imtlucca.it/~bemporad/" target="_blank">Prof. Alberto Bemporad</a>.
 
-I am currently visiting the <a style="text-decoration:none" href="https://mathematik.univie.ac.at/en/" target="_blank">Faculty of Mathematics, University of Vienna</a> as an Erasmus+ Trainee under the supervision of <a style="text-decoration:none" href="http://www.pc-petersen.eu/" target="_blank">Prof. Philipp Petersen</a>.
+<!-- I am currently visiting the <a style="text-decoration:none" href="https://mathematik.univie.ac.at/en/" target="_blank">Faculty of Mathematics, University of Vienna</a> as an Erasmus+ Trainee under the supervision of <a style="text-decoration:none" href="http://www.pc-petersen.eu/" target="_blank">Prof. Philipp Petersen</a>. -->
 
 <!-- previous education
 ---

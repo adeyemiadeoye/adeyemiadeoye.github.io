@@ -1,8 +1,9 @@
 ---
 layout: page
-title: Self-Concordant Smooth Optimization (.jl)
+title: SelfConcordantSmoothOptimization.jl
 description: Julia implementation of self-concordant smoothing algorithms for convex composite optimization 
 img: 
+redirect: https://github.com/adeyemiadeoye/SelfConcordantSmoothOptimization.jl
 github: https://github.com/adeyemiadeoye/SelfConcordantSmoothOptimization.jl
 importance: 1
 category: optimization

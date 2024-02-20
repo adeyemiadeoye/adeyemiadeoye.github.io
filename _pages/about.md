@@ -22,18 +22,6 @@ social: true  # includes social icons at the bottom of the page
 
 I am a PhD student at <a style="text-decoration:none" href="https://www.imtlucca.it/en" target="_blank">IMT Lucca</a> in the Dynamical Systems, Control, and Optimization (<a style="text-decoration:none" href="http://dysco.imtlucca.it/" target="_blank">DYSCO</a>) research group under the supervision of <a style="text-decoration:none" href="http://cse.lab.imtlucca.it/~bemporad/" target="_blank">Prof. Alberto Bemporad</a>.
 
-<!-- I am currently visiting the <a style="text-decoration:none" href="https://mathematik.univie.ac.at/en/" target="_blank">Faculty of Mathematics, University of Vienna</a> as an Erasmus+ Trainee under the supervision of <a style="text-decoration:none" href="http://www.pc-petersen.eu/" target="_blank">Prof. Philipp Petersen</a>. -->
-
-<!-- previous education
----
-<ul>
-<li>M.Sc. in Machine Intelligence, <i>2019 -- 2020/2021</i></li>
-<a style="text-decoration:none" href="https://aimsammi.org/" target="_blank">African Master’s in Machine Intelligence (AMMI)</a> post-graduate program at the <a style="text-decoration:none" href="https://aims.ac.rw/" target="_blank">African Institute for Mathematical Sciences (AIMS)</a>, Rwanda.
-<li>M.Sc. in Mathematical Sciences, <i>2017 -- 2018</i></li>
-<a style="text-decoration:none" href="https://aims-cameroon.org/" target="_blank">African Institute for Mathematical Sciences (AIMS)</a>, Cameroon.
-<li>B.Sc. in Mathematics, <i>2012 -- 2016</i></li>
-<a style="text-decoration:none" style="text-decoration:none" href="https://www.unilorin.edu.ng/" target="_blank">University of Ilorin, Ilorin</a>, Nigeria.
-</ul> -->
 I received my bachelor’s degree in Mathematics in 2016 from the <a style="text-decoration:none" style="text-decoration:none" href="https://www.unilorin.edu.ng/" target="_blank">University of Ilorin</a> in Nigeria. I obtained a master’s degree in Mathematical Sciences in 2018 from the <a style="text-decoration:none" href="https://aims-cameroon.org/" target="_blank">African Institute for Mathematical Sciences (AIMS), Cameroon</a>. In 2019, I joined the <a style="text-decoration:none" href="https://aimsammi.org/" target="_blank">African Master’s in Machine Intelligence (AMMI)</a> post-graduate program at the <a style="text-decoration:none" href="https://aims.ac.rw/" target="_blank">African Institute for Mathematical Sciences (AIMS), Rwanda</a>, where I got a master's degree in Machine Intelligence.
 
 &emsp;
@@ -41,27 +29,17 @@ I received my bachelor’s degree in Mathematics in 2016 from the <a style="text
 
 Research topics
 ---
-I am interested in the mathematics of machine learning (mathematical optimization) and its applications. My past and current research span the following topics:
-<ul style="width:50%; float:left;">
-<li>Mathematics of machine learning and its applications
+<ul>
+<li>Current research focus: Mathematics of machine learning (mathematical optimization) and its applications
   <ul>
   <li>Efficient optimization algorithms for machine learning</li>
   <li>Data-driven identification and control of complex dynamical systems</li>
   </ul>
 </li>
 </ul>
-<ul style="width:50%; float:left;">
-<li>Computational mathematics and its applications
-  <ul>
-  <li>Computational magnetohydrodynamics</li>
-  <li>Computational fluid dynamics</li>
-  </ul>
-</li>
-<br>
-</ul>
 &emsp;&emsp;
-<a href="https://adeyemiadeoye.github.io/papers/" title="Papers" role="button" target="_self"> :memo: Papers </a> &emsp;&emsp;
+<a href="https://adeyemiadeoye.github.io/papers/" title="Papers" role="button" target="_self"> :memo: Papers </a> <br> &emsp;&emsp; 
 <a href="https://adeyemiadeoye.github.io/software/" title="Papers" role="button" target="_self"><i class="fa fa-code"></i> Software </a>
-&emsp;&emsp;
+<br> &emsp;&emsp; 
 <a href="https://scholar.google.com/citations?user={{ site.scholar_userid }}&view_op=list_works&sortby=pubdate" title="Google Scholar"><i class="ai ai-google-scholar"></i> Google Scholar </a>
 <hr>

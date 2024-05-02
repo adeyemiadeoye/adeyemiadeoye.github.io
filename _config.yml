@@ -6,7 +6,7 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: Adeyemi
 middle_name: D.
 last_name: Adeoye
-email: "adeyemi[dot]adeoye[at]imtlucca[dot]it"
+email: # "email-address"
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Website of Adeyemi Damilare Adeoye.
 footer_text: >
@@ -49,7 +49,7 @@ navbar_fixed: true
 footer_fixed: false
 
 # Dimensions
-max_width: 1200px #800px
+max_width: 1400px #800px
 
 # TODO: add layout settings (single page vs. multi-page)
 
@@ -67,7 +67,7 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 
 github_username: adeyemiadeoye # your GitHub user name
 gitlab_username: # your GitLab user name
-twitter_username: theYemiAdeoye # your Twitter handle
+twitter_username: # your Twitter handle
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
 linkedin_username: adeyemi-adeoye # your LinkedIn user name
 telegram_username: # your Telegram user name
@@ -95,7 +95,7 @@ facebook_id: # your facebook id
 discord_id: # your discord id (18-digit unique numerical identifier)
 
 contact_note: >
-  Adeyemi is best reached via email (adeyemi[dot]adeoye[at]imtlucca[dot]it).
+  E-mail: adeyemi[dot]adeoye[at]imtlucca[dot]it
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -152,7 +152,7 @@ collections:
     permalink: /notes/:path/
 
 news_scrollable: false # adds a vertical scroll bar if there are more than 3 news items
-news_limit: 12 # leave blank to include all the news in the `_news` folder
+news_limit: 0 # leave blank to include all the news in the `_news` folder
 
 # -----------------------------------------------------------------------------
 # Jekyll settings

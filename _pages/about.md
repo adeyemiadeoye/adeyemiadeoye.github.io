@@ -37,9 +37,4 @@ Research topics
   </ul>
 </li>
 </ul>
-&emsp;&emsp;
-<a href="https://adeyemiadeoye.github.io/papers/" title="Papers" role="button" target="_self"> :memo: Papers </a> <br> &emsp;&emsp; 
-<a href="https://adeyemiadeoye.github.io/software/" title="Papers" role="button" target="_self"><i class="fa fa-code"></i> Software </a>
-<br> &emsp;&emsp; 
-<a href="https://scholar.google.com/citations?user={{ site.scholar_userid }}&view_op=list_works&sortby=pubdate" title="Google Scholar"><i class="ai ai-google-scholar"></i> Google Scholar </a>
 <hr>

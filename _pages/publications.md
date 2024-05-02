@@ -4,7 +4,7 @@ permalink: /papers/
 title: Papers
 description: Academic writtings by categories in reversed chronological order.
 years: [2024, 2023, 2020]
-years_preprints: [2023]
+years_preprints: [2024, 2023]
 years_technical: [2023, 2022]
 nav: true
 nav_order: 1
@@ -26,7 +26,7 @@ toc:
   {% bibliography -f journal -q @*[year={{y}}]* %}
 {% endfor %}
 
-<h1>Technical reports &amp; theses</h1>
+<h1>Misc., Technical reports &amp; theses</h1>
 
 {% bibliography -f technical %}
 

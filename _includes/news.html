@@ -1,6 +1,17 @@
           
           <div class="news">
-            <h2>Recent updates</h2>
+            
+            <h2>
+              {% plaindetails Updates %}
+              <h6>
+                &emsp;&emsp;
+                <a href="https://adeyemiadeoye.github.io/papers/" title="Papers" role="button" target="_self"> :memo: Papers </a>  &emsp;&emsp; 
+                <a href="https://adeyemiadeoye.github.io/software/" title="Papers" role="button" target="_self"><i class="fa fa-code"></i> Software </a>
+                &emsp;&emsp; 
+                <a href="https://scholar.google.com/citations?user={{ site.scholar_userid }}&view_op=list_works&sortby=pubdate" title="Google Scholar"><i class="ai ai-google-scholar"></i> Google Scholar </a>
+              </h6>
+              {% endplaindetails %}
+            </h2>
             {% if site.news != blank -%} 
             {%- assign news_size = site.news | size -%}
             <div class="table-responsive" {% if site.news_scrollable and news_size > 3 %}style="max-height: 18.2vw"{% endif %}>
@@ -26,7 +37,7 @@
               </table>
             </div>
 
-            {% plaindetails **Older updates** [Click to expand] %}
+            {% plaindetails **Older updates** %}
               {% if news_limit >= news_size %}
                 <p>&emsp;<i>You're all caught up for now...</i></p>
               {% else %}

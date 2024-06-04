@@ -199,6 +199,7 @@ plugins:
   - jekyll-link-attributes
   - jekyll-twitter-plugin
   - jemoji
+  - jekyll-katex
 
 # Sitemap settings
 defaults:

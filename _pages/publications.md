@@ -8,8 +8,8 @@ years_preprints: [2024, 2023]
 years_technical: [2023, 2022]
 nav: true
 nav_order: 1
-toc:
-  sidebar: left
+# toc:
+#   sidebar: left
 ---
 <!-- _pages/publications.md -->
 <div class="publications">

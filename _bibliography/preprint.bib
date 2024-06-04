@@ -1,6 +1,19 @@
 ---
 ---
 
+@unpublished{korbit2024exact,
+  abbr={arXiv},
+  title={Exact Gauss-Newton Optimization for Training Deep Neural Networks}, 
+  author={Mikalai Korbit and Adeyemi D. Adeoye and Alberto Bemporad and Mario Zanon},
+  year={2024},
+  eprint={2405.14402},
+  archivePrefix={arXiv},
+  primaryClass={cs.LG},
+  abstract={We present EGN, a stochastic second-order optimization algorithm that combines the generalized Gauss-Newton (GN) Hessian approximation with low-rank linear algebra to compute the descent direction. Leveraging the Duncan-Guttman matrix identity, the parameter update is obtained by factorizing a matrix which has the size of the mini-batch. This is particularly advantageous for large-scale machine learning problems where the dimension of the neural network parameter vector is several orders of magnitude larger than the batch size. Additionally, we show how improvements such as line search, adaptive regularization, and momentum can be seamlessly added to EGN to further accelerate the algorithm. Moreover, under mild assumptions, we prove that our algorithm converges to an ϵ-stationary point at a linear rate. Finally, our numerical experiments demonstrate that EGN consistently exceeds, or at most matches the generalization performance of well-tuned SGD, Adam, and SGN optimizers across various supervised and reinforcement learning tasks.},
+  journal={},
+  pdf={https://arxiv.org/pdf/2405.14402},
+}
+
 @unpublished{adeoye2023self,
   abbr={arXiv},
   selected=true,

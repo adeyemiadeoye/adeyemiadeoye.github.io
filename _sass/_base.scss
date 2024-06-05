@@ -490,7 +490,7 @@ footer.sticky-bottom {
   h1 {
     color: var(--global-theme-color);
     font-size: 2rem;
-    text-align: center;
+    text-align: left;
     margin-top: 1em;
     margin-bottom: 1em;
   }
@@ -514,7 +514,7 @@ footer.sticky-bottom {
     margin-top: 0;
 
     li {
-      margin-bottom: 1rem;
+      margin-bottom: 0.2rem;
       .preview {
         width: 100%;
         min-width: 80px;

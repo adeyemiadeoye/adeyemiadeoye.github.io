@@ -2,6 +2,49 @@
  * Styles for the base elements of the theme.
  ******************************************************************************/
 
+.rounded-image-wrapper {
+  border-radius: 30px;
+  overflow: hidden;
+  display: inline-block;
+  position: relative;
+}
+
+.rounded-image-wrapper img {
+  border-radius: 30px;
+  width: 100%;
+  height: auto;
+}
+
+.made-with-tikz {
+  position: absolute;
+  bottom: 17px;
+  right: 20px;
+  font-size: 7px;
+  color: #555;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 0px 2px;
+  border-radius: 5px;
+}
+
+
+.news h6 {
+  font-size: 18px;
+}
+
+.news table {
+  font-size: 12px;
+}
+
+.news th, .news td {
+  font-size: 10px;
+}
+
+.news a.news-title {
+  font-size: 12px;
+}
+
+
+
 // Typography
 
 p, h1, h2, em, li, div, span, strong { font-family: 'JuliaMono', sans-serif;
@@ -482,17 +525,58 @@ footer.sticky-bottom {
   }
 }
 
+// Software
+
+.software {
+  a {
+    text-decoration: none;
+
+    &:hover {
+      .card-title {
+        color: var(--global-theme-color);
+      }
+    }
+  }
+
+  .card {
+    img {
+      width: 100%;
+    }
+  }
+
+  .card-item {
+    width: auto;
+    margin-bottom: 10px;
+
+    .row {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .grid-sizer, .grid-item {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+
 
 // Publications
 
 .publications {
   margin-top: 2rem;
+  // counter-reset: publication;
+  div {
+    margin-bottom: -0.1em;
+    margin-top: 0em;
+  }
   h1 {
-    color: var(--global-theme-color);
-    font-size: 2rem;
+    color: black;
+    font-size: 1.5rem;
     text-align: left;
     margin-top: 1em;
-    margin-bottom: 1em;
+    margin-bottom: -1.4em;
   }
   h2 {
     margin-bottom: 1rem;
@@ -513,7 +597,10 @@ footer.sticky-bottom {
     padding: 0;
     margin-top: 0;
 
-    li {
+    > li {
+      // counter-increment: publication;
+      position: relative;
+      padding-left: 2.5em;
       margin-bottom: 0.2rem;
       .preview {
         width: 100%;
@@ -614,6 +701,14 @@ footer.sticky-bottom {
       div.abstract.hidden.open {
         border-color: var(--global-text-color);
       }
+    }
+    > li .reverse-number {
+      // content: counter(publication) ". ";
+      position: absolute;
+      left: 0;
+      width: 2em;
+      text-align: right;
+      font-weight: bold;
     }
   }
 }

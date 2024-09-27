@@ -1,7 +1,7 @@
 
           <div class="news">
 
-            <h2>
+            <!-- <h2>
               {% plaindetails Updates %}
               <h6>
               <table class="table table-sm table-borderless">
@@ -26,11 +26,11 @@
                     </td>
                   </tr>
               </table>
-              </h6>
+              </h6> -->
               <h6>
               {% if site.news != blank -%} 
               {%- assign news_size = site.news | size -%}
-              <div class="table-responsive" {% if site.news_scrollable and news_size > 3 %}style="max-height: 18.2vw"{% endif %}>
+              <!-- <div class="table-responsive" {% if site.news_scrollable and news_size > 3 %}style="max-height: 18.2vw"{% endif %}> -->
                 <table class="table table-sm table-borderless">
                 {%- assign news = site.news | reverse -%}
                 {% if site.news_limit %}
@@ -51,12 +51,13 @@
                   </tr>
                 {%- endfor %}
                 </table>
-              </div>
+              <!-- </div> -->
 
-              {% plaindetails **Older updates** %}
+              {% plaindetails <i class="fas fa-hand-pointer"></i> **Updates** %}
                 {% if news_limit >= news_size %}
                   <p>&emsp;<i>You're all caught up for now...</i></p>
                 {% else %}
+              <div class="table-responsive" {% if site.news_scrollable and news_size > 3 %}style="max-height: 18.2vw"{% endif %}>
                 <table class="table table-sm table-borderless">
                 {% for item in news %} 
                 {% assign newsIndex = forloop.index %}
@@ -74,6 +75,7 @@
                 {% endif %}
                 {% endfor %}
                 </table>
+              </div>
                 {% endif %}
               {% endplaindetails %}
 
@@ -82,7 +84,8 @@
               {%- endif %}
               </h6>
 
-              {% endplaindetails %}
-            </h2>
+              <!-- {% endplaindetails %}
+            </h2> -->
             
           </div>
+          <hr>

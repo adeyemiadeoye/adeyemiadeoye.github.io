@@ -2,7 +2,7 @@
 ---
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-1 {% if entry.preview %}preview{% else %}abbr{% endif %}">
+        <!-- <div class="col-sm-1 {% if entry.preview %}preview{% else %}abbr{% endif %}">
         {%- if entry.preview -%}
           {% if entry.preview contains '://' -%}
           <img class="preview z-depth-3 rounded" src="{{ entry.preview }}">
@@ -20,7 +20,7 @@
             <abbr class="badge">{{entry.abbr}}</abbr>
           {%- endif -%}
         {%- endif -%}
-        </div>
+        </div> -->
 
         <!-- Entry bib key -->
         <div id="{{entry.key}}" class="col-sm-10">
@@ -69,7 +69,7 @@
               {%- if forloop.last and author_array_limit == author_array_size -%}and&nbsp;{%- endif -%}
             {%- endif -%}
             {%- if author_is_self -%}
-              <em style="color: black;">{{author.first}} {{author.last}}</em>
+              <em style="color: black; font-weight: bolder;">{{author.first}} {{author.last}}</em>
             {%- else -%}
               {%- if coauthor_url -%}
                 <a href="{{coauthor_url}}" style="color:black;">{{author.first}} {{author.last}}</a>
@@ -125,7 +125,7 @@
           {%- if entry.month -%}
             {%- capture entrymonth -%}{{ " " }}{{ entry.month | capitalize }}{%- endcapture -%}
           {%- endif -%}
-          {%- if entry.type != "unpublished" -%}
+          {%- if entry.type != "unpublished" and entry.type != "misc" -%}
             {%- if entry.year -%}
               {%- capture entryyear -%}{{ " " }}{{entry.year}}{%- endcapture -%}
             {%- endif -%}
@@ -207,3 +207,48 @@
           {%- endif %}
         </div>
       </div>
+
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          // Select all direct list items within the publications div
+          const listItems = document.querySelectorAll('.publications ol > li');
+    
+          // Log the total number of list items found
+          console.log(`Total list items found: ${listItems.length}`);
+    
+          // Check if any list items are found
+          if (listItems.length === 0) {
+            console.error("No list items found within '.publications ol > li'. Ensure that the bibliography tags generate <ol> and <li> elements.");
+            return;
+          }
+    
+          // Get the total number of list items
+          const totalItems = listItems.length;
+    
+          // Iterate over each list item and assign a reverse number
+          listItems.forEach((li, index) => {
+            // Calculate the reverse number
+            const reverseNumber = totalItems - index;
+    
+            // Debug: Log the current index and reverseNumber
+            console.log(`Assigning number ${reverseNumber} to list item at index ${index}`);
+    
+            // Check if a reverse-number span already exists to avoid duplicates
+            if (li.querySelector('.reverse-number')) {
+              // If already has a number, skip to prevent duplication
+              console.warn(`List item at index ${index} already has a reverse number. Skipping.`);
+              return;
+            }
+    
+            // Create a span element to hold the number
+            const numberSpan = document.createElement('span');
+            numberSpan.classList.add('reverse-number');
+            numberSpan.textContent = reverseNumber + ". ";
+    
+            // Insert the numberSpan at the beginning of the list item
+            li.prepend(numberSpan);
+          });
+        });
+      </script>
+      
+

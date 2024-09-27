@@ -3,10 +3,10 @@ layout: page
 title: Software
 permalink: /software/
 description: 
-nav: true
+nav: false
 nav_order: 3
 display_categories: 
-horizontal: true
+horizontal: false
 ---
 
 <div class="software">

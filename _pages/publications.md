@@ -6,8 +6,8 @@ description: Academic writtings by categories in reversed chronological order.
 years: [2024, 2023, 2020]
 years_preprints: [2024, 2023]
 years_technical: [2023, 2022]
-nav: true
-nav_order: 1
+nav: false
+nav_order: 2
 # toc:
 #   sidebar: left
 ---
@@ -26,7 +26,7 @@ nav_order: 1
   {% bibliography -f journal -q @*[year={{y}}]* %}
 {% endfor %}
 
-<h1>Misc., Technical reports &amp; theses</h1>
+<h1 style="margin-bottom: 0.5em;">Technical reports &amp; theses</h1>
 
 {% bibliography -f technical %}
 

@@ -27,15 +27,15 @@ I am a PhD student at <a style="text-decoration:none" href="https://www.imtlucca
 &emsp;
 <a href="https://adeyemiadeoye.github.io/cv/" title="CV" role="button" target="_self"><i class="ai ai-cv-square ai-1x z-depth-1"></i> Curriculum Vitae </a>
 
-<p style="margin-bottom:1cm;"></p>
----
+<!-- <p style="margin-bottom:1cm;"></p> -->
+<!-- --- -->
 <h5 style="font-weight: bold; font-family: 'JuliaMono', sans-serif;"> Research topics </h5>
 <!-- --- -->
-Mathematics of machine learning (mathematical optimization) and its applications; optimization for machine learning and other engineering applications; data-driven identification and control of complex dynamical systems.
+Mathematics of machine learning (mathematical optimization) and its applications; optimization for machine learning and engineering applications; data-driven identification and control of complex dynamical systems.
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
         <a href="https://adeyemiadeoye.github.io/papers/">
-          <h6 style="font-weight: bold; font-family: 'JuliaMono', sans-serif;">Papers</h6>
+          <h6 style="text-align: center; font-weight: bold; font-family: 'JuliaMono', sans-serif;">Papers</h6>
           <div class="rounded-image-wrapper" style="position: relative;">
             {% include figure.html path="assets/img/home-image.gif" class="img-fluid z-depth-1" zoomable=false %}
             <span class="made-with-tikz">Made with TikZ+GIMP</span>

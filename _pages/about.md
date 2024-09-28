@@ -32,7 +32,7 @@ I received my bachelor’s degree in Mathematics in 2016 from the <a style="text
 
 <h5 style="font-weight: bold; font-family: 'JuliaMono', sans-serif;"> Research topics </h5>
 <!-- --- -->
-Mathematics of machine learning (mathematical optimization) and its applications; optimization for machine learning and other engineering applications; data-driven identification and control of complex dynamical systems.
+Mathematics of machine learning (mathematical optimization) and its applications; optimization for machine learning and engineering applications; data-driven identification and control of complex dynamical systems.
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
         <div class="rounded-image-wrapper" style="position: relative;">

@@ -36,9 +36,9 @@ Mathematics of machine learning (mathematical optimization) and its applications
     <div class="col-sm mt-3 mt-md-0">
         <div class="rounded-image-wrapper" style="position: relative;">
           <a href="https://adeyemiadeoye.github.io/papers/">
-            {% include figure.html path="assets/img/home-image.png" class="img-fluid z-depth-1" zoomable=false %}
+            {% include figure.html path="assets/img/home-image.gif" class="img-fluid z-depth-" zoomable=false %}
           </a>
-          <span class="made-with-tikz">Made with TikZ</span>
+          <span class="made-with-tikz">Made with TikZ+GIMP</span>
         </div>
     </div>
 </div>

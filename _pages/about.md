@@ -18,7 +18,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 # toc:
 #   sidebar: left
-nav_order: 1
+nav_order: 3
 ---
 
 I am a PhD student at <a style="text-decoration:none" href="https://www.imtlucca.it/en" target="_blank">IMT Lucca</a> in the Dynamical Systems, Control, and Optimization (<a style="text-decoration:none" href="http://dysco.imtlucca.it/" target="_blank">DYSCO</a>) research group under the supervision of <a style="text-decoration:none" href="http://cse.lab.imtlucca.it/~bemporad/" target="_blank">Prof. Alberto Bemporad</a>.
@@ -37,9 +37,9 @@ Mathematics of machine learning (mathematical optimization) and its applications
     <div class="col-sm mt-3 mt-md-0">
         <div class="rounded-image-wrapper" style="position: relative;">
           <a href="https://adeyemiadeoye.github.io/papers/">
-            {% include figure.html path="assets/img/home-image.png" class="img-fluid z-depth-1" zoomable=false %}
+            {% include figure.html path="assets/img/home-image.gif" class="img-fluid z-depth-1" zoomable=false %}
           </a>
-          <span class="made-with-tikz">Made with TikZ</span>
+          <span class="made-with-tikz">Made with TikZ+GIMP</span>
         </div>
     </div>
 </div>

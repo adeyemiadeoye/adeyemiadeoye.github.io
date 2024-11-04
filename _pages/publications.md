@@ -15,6 +15,8 @@ nav_order: 2
 <div class="publications">
 
 <h1>Preprints</h1>
+<br><br>
+<h6><i>[Some may be under review; feedback is welcome before publication.]</i></h6>
 {%- for y in page.years_preprints %}
   <h2 class="year">{{y}}</h2>
   {% bibliography -f preprint -q @*[year={{y}}]* %}

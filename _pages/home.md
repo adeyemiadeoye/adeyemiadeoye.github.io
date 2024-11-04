@@ -24,6 +24,8 @@ social: true  # includes social icons at the bottom of the page
 
 I am a PhD student at <a style="text-decoration:none" href="https://www.imtlucca.it/en" target="_blank">IMT Lucca</a> in the Dynamical Systems, Control, and Optimization (<a style="text-decoration:none" href="http://dysco.imtlucca.it/" target="_blank">DYSCO</a>) research group under the supervision of <a style="text-decoration:none" href="http://cse.lab.imtlucca.it/~bemporad/" target="_blank">Prof. Alberto Bemporad</a>.
 
+From August 2023 to January 2024, I was a visiting PhD student at the Faculty of Mathematics, University of Vienna, Austria, supervised by <a style="text-decoration:none" href="https://scholar.google.com/citations?hl=en&user=Huw7cHIAAAAJ" target="_blank">Prof. Philipp Petersen</a>. I hold a Master's degree in Mathematical Sciences and in Machine Intelligence from the African Institute for Mathematical Sciences (AIMS)-Cameroon and the AIMS-African Master's in Machine Intelligence (AMMI), respectively. Before that I obtained a Bachelor's degree in (Pure and Applied) Mathematics from the University of Ilorin, Nigeria.
+
 &emsp;
 <a href="https://adeyemiadeoye.github.io/cv/" title="CV" role="button" target="_self"><i class="ai ai-cv-square ai-1x z-depth-1"></i> Curriculum Vitae </a>
 

@@ -1,6 +1,3 @@
----
-permalink: /robots.txt
----
 User-agent: *
 Disallow: /
 User-agent: GPTBot
@@ -38,4 +35,4 @@ Disallow: /
 User-agent: YouBot
 Disallow: /
 
-Sitemap: {{ site.baseurl | prepend: site.url }}/sitemap.xml
+Sitemap: https://adeyemiadeoye.github.io/sitemap.xml

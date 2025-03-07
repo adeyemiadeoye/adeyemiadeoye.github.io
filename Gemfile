@@ -22,6 +22,6 @@ group :other_plugins do
     gem 'feedjira'
 end
 
-gem "jekyll-jupyter-notebook", "~> 0.0.5"
+gem "jekyll-jupyter-notebook"
 
-gem "jekyll-toc", "~> 0.18.0"
+gem "jekyll-toc"

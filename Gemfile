@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 group :jekyll_plugins do
     gem 'jekyll', '~> 4.2'
     gem 'jekyll-sass-converter'
-    gem 'sassc'
+    gem 'sass-embedded'
     gem 'jekyll-archives'
     gem 'jekyll-diagrams'
     gem 'jekyll-email-protect'

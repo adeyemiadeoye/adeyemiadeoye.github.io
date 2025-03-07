@@ -9,5 +9,4 @@ cv_pdf: Adeyemi_CV.pdf
 ---
 
 
-
 <embed src="{{ site.baseurl }}/assets/pdf/Adeyemi_CV.pdf" width="100%" height="1000" type='application/pdf'>

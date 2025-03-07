@@ -25,3 +25,5 @@ end
 gem "jekyll-jupyter-notebook", "~> 0.0.5"
 
 gem "jekyll-toc", "~> 0.18.0"
+
+gem 'sassc'

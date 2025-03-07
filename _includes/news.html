@@ -40,7 +40,7 @@
                 {% endif %}
                 {% for item in news limit: news_limit %} 
                   <tr>
-                    <th scope="row">{{ item.date | date: "%b %-d, %Y" }}</th>
+                    <th scope="row">{{ item.date | date: "%d-%m-%Y" }}</th>
                     <td>
                       {% if item.inline -%} 
                         {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
@@ -63,7 +63,7 @@
                 {% assign newsIndex = forloop.index %}
                 {% if newsIndex > news_limit %}
                   <tr>
-                    <th scope="row">{{ item.date | date: "%b %-d, %Y" }}</th>
+                    <th scope="row">{{ item.date | date: "%d-%m-%Y" }}</th>
                     <td>
                       {% if item.inline -%} 
                         {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}

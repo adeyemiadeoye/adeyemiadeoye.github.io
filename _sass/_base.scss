@@ -46,17 +46,39 @@
 
 
 
+.talks {
+  font-size: 12px;
+}
+
+.talks th, .talks td {
+  font-size: 14px;
+}
+
+
+
 // Typography
 
-p, h1, h2, em, li, div, span, strong { font-family: 'JuliaMono', sans-serif;
-  font-weight: 400
+p, div { font-family: Verdana, Geneva, Tahoma, 'JuliaMono', sans-serif;
+  font-weight: normal;
+  font-size: 14px;
 }
-h3 { font-family: 'JuliaMono', sans-serif;
+h1 { font-family: Verdana, Geneva, Tahoma, 'JuliaMono', sans-serif;
+  font-weight: normal;
+  font-size: x-large;
+}
+h2, em, li, strong { font-family: Verdana, Geneva, Tahoma, 'JuliaMono', sans-serif;
+  font-weight: normal;
+}
+h3 { font-family: Verdana, Geneva, Tahoma, 'JuliaMono', sans-serif;
   font-size: 24px;
   font-style: normal;
   font-variant: normal;
   font-weight: 700;
   line-height: 15.4px;
+}
+h5 { font-family: Verdana, Geneva, Tahoma, 'JuliaMono', sans-serif;
+  font-weight: 400;
+  font-size: 22px;
 }
 blockquote { font-family: 'JuliaMono';
   font-size: 17.5px;
@@ -65,10 +87,10 @@ blockquote { font-family: 'JuliaMono';
   font-weight: 400;
   line-height: 25px;
 }
-pre { font-family: 'JuliaMono';
-  font-size: 16px;
-  display: block;
-}
+// pre { font-family: 'JuliaMono';
+//   font-size: 16px;
+//   display: block;
+// }
 
 hr {
   border-top: 1px solid var(--global-divider-color);
@@ -88,7 +110,8 @@ table {
 }
 
 a, table.table a {
-  color: var(--global-theme-color);
+  color: #{$grey-color-2};
+  text-decoration: underline;
   &:hover {
     color: var(--global-theme-color);
     text-decoration: underline;
@@ -172,15 +195,15 @@ blockquote {
   }
 }
 .profile.float-right{
-  margin-left: 1rem;
+  margin-left: 0rem;
 }
 .profile.float-left{
-  margin-right: 1rem;
+  margin-right: -8.5rem;
 }
 
 @media (min-width: 576px) {
   .profile {
-    width: 30%;
+    width: 40%;
     .address {
       p { display: block; }
     }
@@ -222,6 +245,7 @@ blockquote {
   }
 }
 .dropdown-item {
+  font-size: 6px;
   color: var(--global-text-color);
     &:hover {
       color: var(--global-hover-color);
@@ -254,7 +278,7 @@ blockquote {
   .navbar-brand.social {
     padding-bottom: 0;
     padding-top: 0;
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     a {
       i::before {
         color: var(--global-text-color);
@@ -319,7 +343,7 @@ blockquote {
 .social {
   text-align: center;
   .contact-icons {
-    font-size: 2rem;
+    font-size: 1.4rem;
     a {
       i::before {
         color: var(--global-text-color);
@@ -333,7 +357,7 @@ blockquote {
     }
   }
   .contact-note {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 }
 
@@ -354,13 +378,18 @@ footer.fixed-bottom {
       text-decoration: none;
     }
   }
+  div {
+    text-align: center;
+  }
 }
 
 footer.sticky-bottom {
   border-top: 1px solid var(--global-divider-color);
-  padding-top: 40px;
-  padding-bottom: 40px;
-  font-size: 0.9rem;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  div {
+    text-align: center;
+  }
 }
 
 // CV
@@ -529,6 +558,10 @@ footer.sticky-bottom {
 // Software
 
 .software {
+  .card-title {
+    font-size: 1.5rem;
+    font-variant: normal;
+  }
   a {
     text-decoration: none;
 
@@ -566,7 +599,8 @@ footer.sticky-bottom {
 // Publications
 
 .publications {
-  margin-top: 2rem;
+  margin-top: 1rem;
+  // width: 1200px;
   // counter-reset: publication;
   div {
     margin-bottom: -0.1em;
@@ -585,11 +619,21 @@ footer.sticky-bottom {
       font-size: 1.5rem;
     }
   }
+  h5 {
+    color: #{$black-color-2};
+    // border-top: 2px solid var(--global-divider-color);
+    // border-style: dashed;
+    // border-top-style: dashed;
+    padding-top: 1rem;
+    margin-top: -1rem;
+    margin-bottom: 0.3rem;
+    text-align: left;
+  }
   h2.year {
     color: var(--global-divider-color);
     border-top: 1px solid var(--global-divider-color);
     padding-top: 1rem;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     margin-bottom: -2rem;
     text-align: right;
   }
@@ -601,10 +645,10 @@ footer.sticky-bottom {
     > li {
       // counter-increment: publication;
       position: relative;
-      padding-left: 2.5em;
-      margin-bottom: 0.2rem;
+      padding-left: 3em;
+      margin-bottom: 0.7rem;
       .preview {
-        width: 100%;
+        width: 110%;
         min-width: 80px;
         max-width: 200px;
       }
@@ -634,13 +678,14 @@ footer.sticky-bottom {
       .author {
         a {
           border-bottom: 1px dashed darkgray;
+          text-decoration: none;
           &:hover {
               border-bottom-style: solid;
               text-decoration: none;
           }
         }
         > em {
-          border-bottom: 2px solid;
+          // border-bottom: 2px solid;
           font-style: normal;
         }
         > span.more-authors {
@@ -654,16 +699,21 @@ footer.sticky-bottom {
         }
       }
       .links {
-        a.btn {
-          color: var(--global-text-color);
-          border: 1px solid var(--global-text-color);
-          padding-left: 1rem;
-          padding-right: 1rem;
-          padding-top: 0.25rem;
-          padding-bottom: 0.25rem;
+        a.fas, a.fab {
+          color: #{$blue-color-dark-2};
+          // border: 0.8px solid #{$blue-color-dark-2};
+          text-decoration: underline;
+          // background-color: #{$blue-color-dark-2};
+          padding-left: 0.2rem;
+          padding-right: 0.2rem;
+          padding-top: 0.2rem;
+          padding-bottom: 0.2rem;
+
           &:hover {
-            color: var(--global-theme-color);
+            color: white;
             border-color: var(--global-theme-color);
+            background-color: #{$grey-color-2};
+            text-decoration: underline;
           }
         }
       }
@@ -683,7 +733,7 @@ footer.sticky-bottom {
           margin: 10px;
         }
         pre {
-          font-size: 1em;
+          // font-size: 1em;
           line-height: 1.4em;
           padding: 10px;
         }
@@ -754,6 +804,12 @@ html.transition *:after {
     color: var(--global-text-color-light);
     font-size: 0.875rem;
     margin-bottom: 0;
+  }
+  .post-title {
+    color: #{$blue-color-dark-2};
+    margin-top: -2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-variant: small-caps;
   }
   .post-tags{
     color: var(--global-text-color-light);
@@ -1015,5 +1071,16 @@ nav[data-toggle="toc"] {
     font-size: 0.875rem;
     margin-bottom: 0;
     padding-top: 0.5rem;
+  }
+}
+
+
+
+katex-inline.keepfont {
+  .katex, .mathnormal, .mathit, .mathrm {
+      font-family: inherit;
+  }
+  .katex {
+      font-size: 1em;
   }
 }

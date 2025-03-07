@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Research
-nav: true
+nav: false
 nav_order: 1
-dropdown: true
+dropdown: false
 children: 
-    - title: Papers
-      permalink: /papers/
+    - title: Publications
+      permalink: /publications/
     - title: divider
     - title: Software
       permalink: /software/

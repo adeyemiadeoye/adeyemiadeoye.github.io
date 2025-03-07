@@ -16,7 +16,6 @@ group :jekyll_plugins do
     gem 'therubyracer'
     gem 'unicode_utils'
     gem 'webrick'
-    gem 'jekyll-katex'
 end
 group :other_plugins do
     gem 'httparty'

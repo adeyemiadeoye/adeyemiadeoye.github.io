@@ -1,34 +1,28 @@
 ---
 layout: page
-permalink: /papers/
-title: Papers
-description: Academic writtings by categories in reversed chronological order.
-years: [2024, 2023, 2020]
-years_preprints: [2024, 2023]
-years_technical: [2023, 2022]
-nav: false
-nav_order: 2
+permalink: /publications/
+title: Publications
+description: 
+nav: true
+nav_order: 1
 # toc:
 #   sidebar: left
 ---
 <!-- _pages/publications.md -->
+<div style="font-size: small; margin-top: -1rem;">See also:
+<span class="links" style="text-transform: lowercase; font-size: x-small;">
+<a href="https://scholar.google.com/citations?user=G8fKpqwAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" class="ai ai-google-scholar" role="button">Google Scholar Profile</a>
+</span>
+</div>
 <div class="publications">
 
-<h1>Preprints</h1>
-<br><br>
-<h6><i>[Some may be under review; feedback is welcome before publication.]</i></h6>
-{%- for y in page.years_preprints %}
-  <h2 class="year">{{y}}</h2>
-  {% bibliography -f preprint -q @*[year={{y}}]* %}
-{% endfor %}
+<h5>Preprints</h5>
+{% bibliography -f preprint %}
 
-<h1>Journal articles</h1>
-{%- for y in page.years %}
-  <h2 class="year">{{y}}</h2>
-  {% bibliography -f journal -q @*[year={{y}}]* %}
-{% endfor %}
+<h5>Journal articles</h5>
+{% bibliography -f journal %}
 
-<h1 style="margin-bottom: 0.5em;">Technical reports &amp; theses</h1>
+<h5>Technical reports &amp; theses</h5>
 
 {% bibliography -f technical %}
 

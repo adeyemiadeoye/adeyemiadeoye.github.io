@@ -5,7 +5,7 @@ description: Julia package for self-concordant smoothing algorithms for convex c
 img: 
 redirect: https://github.com/adeyemiadeoye/SelfConcordantSmoothOptimization.jl
 github: https://github.com/adeyemiadeoye/SelfConcordantSmoothOptimization.jl
-importance: 1
+importance: 2
 category: optimization
 related_publications: adeoye2023self
 toc:

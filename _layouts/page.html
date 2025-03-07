@@ -35,5 +35,8 @@ layout: default
           {%- if site.giscus.repo and page.giscus_comments -%}
             {% include giscus.html %}
           {%- endif -%}
+          {% if page.talks -%}
+            {% include talks.html %}
+          {%- endif %}
 
         </div>

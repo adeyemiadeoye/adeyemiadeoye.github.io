@@ -1,0 +1,21 @@
+{% assign entry = entry | jsonify | parse %}
+{% assign authors = entry.author %}
+{% assign authors_size = authors | size %}
+
+<!-- Custom author formatting -->
+{% for author in authors %}
+  {% assign author_last_name = author.last | remove: "¶" | remove: "&" | remove: "*" | remove: "†" | remove: "^" %}
+  {% if forloop.first == false %}, {% endif %}
+  {{ author_last_name }} {{ author.first }}
+{% endfor %}
+
+<!-- Custom title formatting -->
+, "<a href="{{ entry.url }}">{{ entry.title }}</a>"
+
+<!-- Other details (e.g., journal, year) -->
+{% if entry.journal %}
+  , <em>{{ entry.journal }}</em>
+{% endif %}
+{% if entry.year %}
+  , {{ entry.year }}
+{% endif %}

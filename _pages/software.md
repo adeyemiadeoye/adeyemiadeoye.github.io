@@ -3,7 +3,7 @@ layout: page
 title: Software
 permalink: /software/
 description: 
-nav: false
+nav: true
 nav_order: 3
 display_categories: 
 horizontal: false

@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 group :jekyll_plugins do
-    gem 'jekyll', '~> 4.2' 
+    gem 'jekyll', '~> 4.2'
+    gem 'jekyll-sass-converter'
+    gem 'sassc'
     gem 'jekyll-archives'
     gem 'jekyll-diagrams'
     gem 'jekyll-email-protect'
@@ -25,5 +27,3 @@ end
 gem "jekyll-jupyter-notebook", "~> 0.0.5"
 
 gem "jekyll-toc", "~> 0.18.0"
-
-gem 'sassc'

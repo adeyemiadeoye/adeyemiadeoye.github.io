@@ -33,7 +33,8 @@ From August 2023 to January 2024, I was a visiting PhD student at the Faculty of
 <!-- --- -->
 <h5 style="font-weight: bold; font-family: Verdana, Geneva, Tahoma, 'JuliaMono', sans-serif;"> Research topics </h5>
 <!-- --- -->
-Mathematical optimization for engineering applications, with emphasis on its foundational role in machine learning and control; neural network-based identification and control of complex dynamical systems.
+
+Mathematical optimization for engineering applications, with a focus on its theoretical foundations, algorithmic advancements, and practical role in machine learning and control.
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
         <a href="https://adeyemiadeoye.github.io/publications/" target="_self">

@@ -2,7 +2,7 @@
 layout: about
 title: Home
 permalink: /
-subtitle: #PhD student at <a href="https://www.imtlucca.it/en/adeyemi.adeoye" target="_blank">IMT Lucca</a>
+subtitle: 
 header_image:
 nav: false 
 
@@ -22,9 +22,9 @@ social: true  # includes social icons at the bottom of the page
 #   sidebar: left
 ---
 
-I am a Research Fellow and PhD candidate in the <a href="http://dysco.imtlucca.it/" target="_blank">DYSCO</a> (Dynamical Systems, Control, and Optimization) research group at <a href="https://www.imtlucca.it/en" target="_blank">IMT Lucca, Italy</a> under the supervision of <a href="http://cse.lab.imtlucca.it/~bemporad/" target="_blank">Prof. Alberto Bemporad</a>.
+I am currently a Research Fellow at IMT Lucca, Italy, under <a href="http://cse.lab.imtlucca.it/~bemporad/" target="_blank">Prof. Alberto Bemporad</a>. I also work closely with <a href="https://pylat.github.io/" target="_blank">Dr. Puya Latafat</a>.
 
-From August 2023 to January 2024, I was a visiting PhD student at the Faculty of Mathematics, University of Vienna, Austria, supervised by <a href="https://scholar.google.com/citations?hl=en&user=Huw7cHIAAAAJ" target="_blank">Prof. Philipp Petersen</a>. I hold a Master's degree in Mathematical Sciences and in Machine Intelligence from the <a href="https://en.wikipedia.org/wiki/African_Institute_for_Mathematical_Sciences" target="_blank">African Institute for Mathematical Sciences (AIMS)</a> and the AIMS-African Master's in Machine Intelligence (AMMI), respectively. Before that, I obtained a Bachelor's degree in (Pure and Applied) Mathematics from the <a href="https://en.wikipedia.org/wiki/University_of_Ilorin" target="_blank">University of Ilorin (UNILORIN), Nigeria</a>.
+I completed my PhD at IMT Lucca in June 2025, and was fortunate to be supervised by Prof. Alberto Bemporad. From August 2023 to January 2024, I visited <a href="https://scholar.google.com/citations?hl=en&user=Huw7cHIAAAAJ" target="_blank">Prof. Philipp Petersen</a>'s <a href="https://math-ml.univie.ac.at/" target="_blank">Math ML group</a> at the University of Vienna (Austria) as an Erasmus+ Trainee.
 
 &emsp;
 <a href="https://adeyemiadeoye.github.io/cv/" title="CV" role="button" target="_self"><i class="ai ai-cv-square ai-1x z-depth-1"></i> Curriculum Vitae </a>
@@ -34,7 +34,9 @@ From August 2023 to January 2024, I was a visiting PhD student at the Faculty of
 <h5 style="font-weight: bold; font-family: Verdana, Geneva, Tahoma, 'JuliaMono', sans-serif;"> Research topics </h5>
 <!-- --- -->
 
-Mathematical optimization for engineering applications, with a focus on its theoretical foundations, algorithmic advancements, and practical role in machine learning and control.
+Mathematical optimization for engineering applications, with a focus on its theoretical foundations, algorithmic development, and practical implementation in machine learning, control systems, and other interdisciplinary domains.
+
+
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
         <a href="https://adeyemiadeoye.github.io/publications/" target="_self">

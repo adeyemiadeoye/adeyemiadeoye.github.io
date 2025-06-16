@@ -22,7 +22,7 @@ social: true  # includes social icons at the bottom of the page
 #   sidebar: left
 ---
 
-I am currently a Research Fellow at IMT Lucca, Italy, under <a href="http://cse.lab.imtlucca.it/~bemporad/" target="_blank">Prof. Alberto Bemporad</a>. I also work closely with <a href="https://pylat.github.io/" target="_blank">Dr. Puya Latafat</a>.
+I am currently a Research Fellow at IMT Lucca, Italy, under <a href="http://cse.lab.imtlucca.it/~bemporad/" target="_blank">Prof. Alberto Bemporad</a> on an ERC-Advanced Grant project.
 
 I completed my PhD at IMT Lucca in June 2025, and was fortunate to be supervised by Prof. Alberto Bemporad. From August 2023 to January 2024, I visited <a href="https://scholar.google.com/citations?hl=en&user=Huw7cHIAAAAJ" target="_blank">Prof. Philipp Petersen</a>'s <a href="https://math-ml.univie.ac.at/" target="_blank">Math ML group</a> at the University of Vienna (Austria) as an Erasmus+ Trainee.
 

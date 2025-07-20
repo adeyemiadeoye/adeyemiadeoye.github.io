@@ -22,7 +22,7 @@ nav_order: 1
 <h5>Journal articles</h5>
 {% bibliography -f journal %}
 
-<h5>Technical reports &amp; theses</h5>
+<h5>Theses &amp; technical reports</h5>
 
 {% bibliography -f technical %}
 

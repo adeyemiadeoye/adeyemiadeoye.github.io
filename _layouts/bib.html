@@ -19,6 +19,13 @@
             <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" class="fas fa-file-pdf" role="button">PDF</a>
             {%- endif %}
           {%- endif %}
+          {%- if entry.slides %}
+            {% if entry.slides contains '://' -%}
+            <a href="{{ entry.slides }}" class="fas fa-file-pdf" role="button">Slides</a>
+            {%- else -%}
+            <a href="{{ entry.slides | prepend: '/assets/pdf/' | relative_url }}" class="fas fa-file-pdf" role="button">Slides</a>
+            {%- endif %}
+          {%- endif %}
           {%- if entry.code %}
             <a href="{{ entry.code }}" class="fas fa-code" role="button">Code</a>
           {%- endif %}
@@ -46,13 +53,6 @@
             <a href="{{ entry.poster }}" class="btn btn-sm z-depth-0" role="button">Poster</a>
             {%- else -%}
             <a href="{{ entry.poster | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Poster</a>
-            {%- endif %}
-          {%- endif %}
-          {%- if entry.slides %}
-            {% if entry.slides contains '://' -%}
-            <a href="{{ entry.slides }}" class="btn btn-sm z-depth-0" role="button">Slides</a>
-            {%- else -%}
-            <a href="{{ entry.slides | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Slides</a>
             {%- endif %}
           {%- endif %}
           {%- if entry.website %}

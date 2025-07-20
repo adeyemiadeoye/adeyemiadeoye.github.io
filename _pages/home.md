@@ -24,7 +24,7 @@ social: true  # includes social icons at the bottom of the page
 
 I am currently a Research Fellow at IMT Lucca, Italy, under <a href="http://cse.lab.imtlucca.it/~bemporad/" target="_blank">Prof. Alberto Bemporad</a> on an ERC-Advanced Grant project.
 
-I completed my PhD at IMT Lucca in June 2025, and was fortunate to be supervised by Prof. Alberto Bemporad. From August 2023 to January 2024, I visited <a href="https://scholar.google.com/citations?hl=en&user=Huw7cHIAAAAJ" target="_blank">Prof. Philipp Petersen</a>'s <a href="https://math-ml.univie.ac.at/" target="_blank">Math ML group</a> at the University of Vienna (Austria) as an Erasmus+ Trainee.
+I completed my PhD at IMT Lucca in June 2025, and was fortunate to be supervised by Prof. Alberto Bemporad (<a href="http://e-theses.imtlucca.it/449/1/Adeoye_phdthesis.pdf" target="_blank">Thesis</a>, <a href="https://adeyemiadeoye.github.io/assets/pdf/Adeyemi_thesis_slides.pdf" target="_blank">Slides</a>). From August 2023 to January 2024, I visited <a href="https://scholar.google.com/citations?hl=en&user=Huw7cHIAAAAJ" target="_blank">Prof. Philipp Petersen</a>'s <a href="https://math-ml.univie.ac.at/" target="_blank">Math ML group</a> at the University of Vienna (Austria) as an Erasmus+ Trainee. Previously, I studied at <a href="https://en.wikipedia.org/wiki/African_Institute_for_Mathematical_Sciences" target="_blank">AIMS</a> (MSc, 2018 and 2020) and the <a href="https://en.wikipedia.org/wiki/University_of_Ilorin" target="_blank">University of Ilorin</a> (BSc, 2016).
 
 &emsp;
 <a href="https://adeyemiadeoye.github.io/cv/" title="CV" role="button" target="_self"><i class="ai ai-cv-square ai-1x z-depth-1"></i> Curriculum Vitae </a>

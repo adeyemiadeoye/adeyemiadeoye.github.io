@@ -90,4 +90,4 @@ cv_pdf: Adeyemi_CV.pdf
 ### Miscellaneous
 
 - **Freelance A-Level Mathematics and Physics Teacher**: Multiple privately-owned coaching centers (2014-2016), Nigeria
-- **Freelance Web Content Developer & Digital Marketing Specialist**: Self-employed (2016-2019), Nigeria
+- **Freelance Web Content Developer & Digital Marketing Specialist** (2016-2019), Nigeria

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: SelfConcordantSmoothOptimization.jl
-description: Julia package for self-concordant smoothing algorithms for convex composite optimization 
+description: Julia package for self-concordant smoothing algorithms for convex composite optimization.
 img: 
 redirect: https://github.com/adeyemiadeoye/SelfConcordantSmoothOptimization.jl
 github: https://github.com/adeyemiadeoye/SelfConcordantSmoothOptimization.jl

@@ -2,6 +2,20 @@
  * Styles for the base elements of the theme.
  ******************************************************************************/
 
+body {
+    // background-color: gainsboro;
+    // background-image: url("/assets/img/white-paper-texture-background.jpg");
+    background-position: center;
+    background-repeat: repeat;
+    background-size: contain;
+    margin:0; padding:0;
+    overflow-x:hidden;
+    height:100%;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.45;
+}
+
 .rounded-image-wrapper {
   border-radius: 70px;
   overflow: hidden;
@@ -55,36 +69,35 @@
 }
 
 
-
 // Typography
 
 p, div { font-family: Verdana, Geneva, Tahoma, 'JuliaMono', sans-serif;
-  font-weight: normal;
+  font-weight: 700;
   font-size: 14px;
 }
 h1 { font-family: Verdana, Geneva, Tahoma, 'JuliaMono', sans-serif;
-  font-weight: normal;
+  font-weight: 700;
   font-size: x-large;
 }
 h2, em, li, strong { font-family: Verdana, Geneva, Tahoma, 'JuliaMono', sans-serif;
-  font-weight: normal;
+  font-weight: 700;
 }
 h3 { font-family: Verdana, Geneva, Tahoma, 'JuliaMono', sans-serif;
   font-size: 24px;
   font-style: normal;
   font-variant: normal;
-  font-weight: 700;
+  font-weight: 1000;
   line-height: 15.4px;
 }
 h5 { font-family: Verdana, Geneva, Tahoma, 'JuliaMono', sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 22px;
 }
 blockquote { font-family: 'JuliaMono';
   font-size: 17.5px;
   font-style: normal;
   font-variant: normal;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 25px;
 }
 // pre { font-family: 'JuliaMono';
@@ -105,7 +118,7 @@ table {
   }
   td {
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 700;
   }
 }
 
@@ -760,7 +773,7 @@ footer.sticky-bottom {
       left: 0;
       width: 2em;
       text-align: right;
-      font-weight: bold;
+      font-weight: 700;
     }
   }
 }

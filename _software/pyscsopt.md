@@ -1,7 +1,7 @@
 ---
 layout: page
 title: pySCSOpt
-description: A Python/JAX port of SelfConcordantSmoothOptimization.jl 
+description: A Python port of SelfConcordantSmoothOptimization.jl
 img: 
 redirect: https://github.com/adeyemiadeoye/pySCSOpt
 github: https://github.com/adeyemiadeoye/pySCSOpt

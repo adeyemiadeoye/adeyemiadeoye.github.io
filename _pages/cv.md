@@ -67,7 +67,7 @@ cv_pdf: Adeyemi_CV.pdf
 - **Award of Excellence**: Kwara Class of Honors, Kwara, Nigeria, (Dec 2016)
 - **Silver Medal**: National Mathematical Center (NMC), Abuja, Nigeria, (Apr 2016)
 - **Undergraduate Scholarship**: MTN Foundation (MTNF) Scholarship Scheme, Nigeria, (2014-2016)
-- **Miscellaneous**: Won several prizes at inter-school/state and national primary and high school level mathematics competitions in Nigeria (2005-2011)
+- **Miscellaneous**: Won several prizes at inter-school/state and national primary and high school level mathematics competitions in Nigeria (2003-2011)
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: pbalm
-description:  Python code for a proximal augmented Lagrangian algorithm for solving nonconvex structured optimization.
+description:  Python code for a proximal augmented Lagrangian algorithm for solving nonconvex structured nonlinear programming problems.
 img: 
 redirect: https://github.com/adeyemiadeoye/p-balm
 github: https://github.com/adeyemiadeoye/p-balm

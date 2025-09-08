@@ -31,8 +31,9 @@ cv_pdf: Adeyemi_CV.pdf
     - Supervisor: [Dr. Jos Usman Abubakar](https://mathematics.physicalsciences.unilorin.edu.ng/staffmember/dr-abubakar-jos-usman/)
 
 - B.Sc. in Mathematics (First Class Honors): University of Ilorin, Ilorin, Nigeria (2012-2016)  
-    - Final-year project: On Some Finite Difference Methods for Solving Partial Differential Equations (Grade: A)  
-    - Supervisor: [Dr. Babatunde Morufu Yisa](https://mathematics.physicalsciences.unilorin.edu.ng/staffmember/dr-yisa-babtunde-morufu/)
+    - Final-year project: On Some Finite Difference Methods for Solving Partial Differential Equations (Grade: A)
+    - Level (General) Advisor: [Prof. (Mrs.) Yidiat Omolade Aderinto](https://mathematics.physicalsciences.unilorin.edu.ng/staffmember/prof-mrs-aderinto-omolade-yidiat/)
+    - Final Project Supervisor: [Dr. Babatunde Morufu Yisa](https://mathematics.physicalsciences.unilorin.edu.ng/staffmember/dr-yisa-babtunde-morufu/)
 
 ---
 

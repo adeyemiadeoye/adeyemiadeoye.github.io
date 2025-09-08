@@ -20,19 +20,19 @@ cv_pdf: Adeyemi_CV.pdf
 
 - Ph.D. in Systems Science: IMT School for Advanced Studies Lucca, Italy (Nov 2020 - June 2025)  
     - Thesis: [Quasi-Newton Methods for Solving Nonsmooth Optimization Problems in Learning and Control](http://e-theses.imtlucca.it/449/) (Grade: Excellent / Summa Cum Laude)  
-    - Supervisor: Prof. Alberto Bemporad
+    - Supervisor: [Prof. Alberto Bemporad](http://cse.lab.imtlucca.it/~bemporad/)
 
 - M.Sc. in Mathematical Sciences (Machine Intelligence): African Institute for Mathematical Sciences, Rwanda (Oct 2019 - Mar 2021)  
     - Final report: [A Deep Neural Network Optimization Method via a Highway Traffic Model](https://adeyemiadeoye.github.io/assets/pdf/adeoye-petersen-2021.pdf) (Grade: Very Good Pass)  
-    - Supervisor: Prof. Philipp Petersen (University of Vienna)
+    - Supervisor: [Prof. Philipp Petersen](https://scholar.google.com/citations?hl=en&user=Huw7cHIAAAAJ)
 
 - M.Sc. in Mathematical Sciences: African Institute for Mathematical Sciences, Cameroon (2017 - 2018)  
     - Final essay: [Blood Flow in an Inclined Tapered Stenosed Porous Artery under the Influence of Magnetic Field and Heat Transfer](https://library.nexteinstein.org/thesis/blood-flow-in-an-inclined-tapered-stenosed-porous-artery-under-the-influence-of-magnetic-field-and-heat-transfer) (Grade: Distinction)  
-    - Supervisor: Dr. Jos Usman Abubakar
+    - Supervisor: [Dr. Jos Usman Abubakar](https://mathematics.physicalsciences.unilorin.edu.ng/staffmember/dr-abubakar-jos-usman/)
 
 - B.Sc. in Mathematics (First Class Honors): University of Ilorin, Ilorin, Nigeria (2012-2016)  
     - Final-year project: On Some Finite Difference Methods for Solving Partial Differential Equations (Grade: A)  
-    - Supervisor: Dr. Babatunde Morufu Yisa
+    - Supervisor: [Dr. Babatunde Morufu Yisa](https://mathematics.physicalsciences.unilorin.edu.ng/staffmember/dr-yisa-babtunde-morufu/)
 
 ---
 

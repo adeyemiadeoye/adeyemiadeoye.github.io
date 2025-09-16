@@ -15,66 +15,75 @@ layout: default
 
 <div class="post">
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%B %-d, %Y" }}{%- if page.author -%} • {{ page.author }}{%- endif -%}{%- if page.meta -%} • {{ page.meta }}{%- endif -%}</p>
-    <p class="post-tags">
-      <a href="{{ year | prepend: '/blog/' | prepend: site.baseurl}}"> <i class="fas fa-calendar fa-sm"></i> {{ year }} </a>
-      {%- if tags != "" %}
-      &nbsp; &middot; &nbsp;
-        {% for tag in page.tags -%}
-        <a href="{{ tag | slugify | prepend: '/blog/tag/' | prepend: site.baseurl}}">
-          <i class="fas fa-hashtag fa-sm"></i> {{ tag }}</a> &nbsp;
-          {% endfor -%}
-      {% endif %}
+  <div class="row">
+    <aside class="col-md-3 d-none d-md-block">
+      {% include sidebar.html %}
+    </aside>
 
-      {%- if categories != "" %}
-      &nbsp; &middot; &nbsp;
-        {% for category in page.categories -%}
-        <a href="{{ category | slugify | prepend: '/blog/category/' | prepend: site.baseurl}}">
-          <i class="fas fa-tag fa-sm"></i> {{ category }}</a> &nbsp;
-          {% endfor -%}
-      {% endif %}
+    <main class="col-md-10 content-with-sidebar">
+      <header class="post-header">
+        <h1 class="post-title">{{ page.title }}</h1>
+        <p class="post-meta">{{ page.date | date: "%B %-d, %Y" }}{%- if page.author -%} • {{ page.author }}{%- endif -%}{%- if page.meta -%} • {{ page.meta }}{%- endif -%}</p>
+        <p class="post-tags">
+          <a href="{{ year | prepend: '/blog/' | prepend: site.baseurl}}"> <i class="fas fa-calendar fa-sm"></i> {{ year }} </a>
+          {%- if tags != "" %}
+          &nbsp; &middot; &nbsp;
+            {% for tag in page.tags -%}
+            <a href="{{ tag | slugify | prepend: '/blog/tag/' | prepend: site.baseurl}}">
+              <i class="fas fa-hashtag fa-sm"></i> {{ tag }}</a> &nbsp;
+              {% endfor -%}
+          {% endif %}
 
-    </p>
-  </header>
+          {%- if categories != "" %}
+          &nbsp; &middot; &nbsp;
+            {% for category in page.categories -%}
+            <a href="{{ category | slugify | prepend: '/blog/category/' | prepend: site.baseurl}}">
+              <i class="fas fa-tag fa-sm"></i> {{ category }}</a> &nbsp;
+              {% endfor -%}
+          {% endif %}
 
-  <article class="post-content">
-    {% if page.toc and page.toc.beginning %}
-    <div id="table-of-contents">
-      {% toc %}
-    </div>
-    <hr>
-    {% endif %}
-    <div id="markdown-content">
-      {{ content }}
-    </div>
-  </article>
+        </p>
+      </header>
 
-  {%- if page.related_publications != null and page.related_publications.size > 0 -%}
-  {% assign publications = page.related_publications | replace: ", ", "," | split: "," | join: "|" %}
-  <h2>References</h2>
-  <div class="publications">
-    {% bibliography -f journal -q @*[key^={{ publications }}]* %}
-    {% bibliography -f conference -q @*[key^={{ publications }}]* %}
-    {% bibliography -f preprint -q @*[key^={{ publications }}]* %}
-    {% bibliography -f technical -q @*[key^={{ publications }}]* %}
+      <article class="post-content">
+        {% if page.toc and page.toc.beginning %}
+        <div id="table-of-contents">
+          {% toc %}
+        </div>
+        <hr>
+        {% endif %}
+        <div id="markdown-content">
+          {{ content }}
+        </div>
+      </article>
+
+      {%- if page.related_publications != null and page.related_publications.size > 0 -%}
+      {% assign publications = page.related_publications | replace: ", ", "," | split: "," | join: "|" %}
+      <h2>References</h2>
+      <div class="publications">
+        {% bibliography -f journal -q @*[key^={{ publications }}]* %}
+        {% bibliography -f conference -q @*[key^={{ publications }}]* %}
+        {% bibliography -f preprint -q @*[key^={{ publications }}]* %}
+        {% bibliography -f technical -q @*[key^={{ publications }}]* %}
+      </div>
+      {%- endif %}
+
+      {%- if site.disqus_shortname and page.comments -%}
+        <div id="disqus_thread" style="max-width: {{ site.max_width }}; margin: 0 auto"></div>
+        <script type="text/javascript">
+          var disqus_shortname  = '{{ site.disqus_shortname }}';
+          var disqus_identifier = '{{ page.id }}';
+          var disqus_title      = {{ page.title | jsonify }};
+          (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      {%- endif %}
+
+    </main>
   </div>
-  {%- endif %}
-
-  {%- if site.disqus_shortname and page.comments -%}
-    <div id="disqus_thread" style="max-width: {{ site.max_width }}; margin: 0 auto"></div>
-    <script type="text/javascript">
-      var disqus_shortname  = '{{ site.disqus_shortname }}';
-      var disqus_identifier = '{{ page.id }}';
-      var disqus_title      = {{ page.title | jsonify }};
-      (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-      })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  {%- endif %}
 
 </div>

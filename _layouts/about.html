@@ -3,50 +3,121 @@ layout: default
 ---
 
 <!-- about.html -->
-      <div class="post" style="max-width: 90%; margin-left: auto; margin-right: auto;">
-        <header class="post-header">
-          <h1 class="post-title" style="font-variant: normal;">
-           {% if site.title == "blank" -%}<span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}{%- else -%}{{ site.title }}{%- endif %}
-          </h1>
-          <!-- <p class="desc">{{ page.subtitle }}</p> -->
-          {%- if page.header_image %}
-            {%- assign header_image_path = page.header_image | prepend: 'assets/img/' -%}
+<div class="container" style="max-width: 100%; margin-left: auto; margin-right: auto;">
+  <div class="row">
+    <aside class="col-md-3 d-none d-md-block">
+      {% include sidebar.html %}
+    </aside>
 
-            {%- assign profile_image_class = "img-fluid z-depth-1 rounded" -%}
-
-            {% include figure.html 
-            path=header_image_path 
-            class=header_image_class
-            alt=page.header_image -%}
-          {% endif -%}
+    <main class="col-md-10 content-with-sidebar">
+      <div class="post">
+        <header class="post-header text-center" style="padding-top:0rem; padding-bottom:1rem;">
+          <div class="d-flex align-items-center justify-content-center flex-wrap" style="gap:1rem;">
+            {%- assign align = page.profile.align | default: 'right' -%}
+            {% if page.profile and page.profile.image %}
+              {% if align == 'left' %}
+                <div style="min-width:180px;">
+                  <h6 class="post-title m-0" style="font-variant: normal; font-weight:500;">
+                    {% if site.title == "blank" -%}
+                      {{ site.first_name }}
+                      {% if site.middle_initial %}
+                        {{ site.middle_initial }}
+                      {% else %}
+                        {{ site.middle_name }}
+                      {% endif %}
+                      {{ site.last_name }}
+                    {%- else -%}
+                      {{ site.title }}
+                    {%- endif -%}
+                  </h6>
+                  {% if page.profile and page.profile.address %}
+                    <div class="mt-1 address" style="font-family:monospace; color:rgba(0,0,0,0.7);">
+                      {{ page.profile.address }}
+                    </div>
+                  {% endif %}
+                </div>
+                <div style="max-width:140px; flex:0 0 auto;">
+                  {%- assign profile_image_path = page.profile.image | prepend: 'assets/img/' -%}
+                  {%- if page.profile.image_circular -%}
+                    {%- assign profile_image_class = "img-fluid z-depth-1 rounded-circle" -%}
+                  {%- else -%}
+                    {%- assign profile_image_class = "img-fluid z-depth-1 rounded" -%}
+                  {%- endif -%}
+                  {% include figure.html path=profile_image_path class=profile_image_class alt=page.profile.image -%}
+                </div>
+              {% else %}
+                <div style="max-width:140px; flex:0 0 auto;">
+                  {%- assign profile_image_path = page.profile.image | prepend: 'assets/img/' -%}
+                  {%- if page.profile.image_circular -%}
+                    {%- assign profile_image_class = "img-fluid z-depth-1 rounded-circle" -%}
+                  {%- else -%}
+                    {%- assign profile_image_class = "img-fluid z-depth-1 rounded" -%}
+                  {%- endif -%}
+                  {% include figure.html path=profile_image_path class=profile_image_class alt=page.profile.image -%}
+                </div>
+                <div style="min-width:180px;">
+                  <h1 class="post-title m-0" style="font-variant: normal; font-weight:800;">
+                    {% if site.title == "blank" -%}
+                      <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}
+                    {%- else -%}
+                      {{ site.title }}
+                    {%- endif -%}
+                  </h1>
+                  {% if page.profile and page.profile.address %}
+                    <div class="mt-1 address" style="font-family:monospace; color:rgba(0,0,0,0.7);">
+                      {{ page.profile.address }}
+                    </div>
+                  {% endif %}
+                </div>
+              {% endif %}
+            {% elsif page.header_image %}
+              {% if align == 'left' %}
+                <div style="min-width:180px;">
+                  <h1 class="post-title m-0" style="font-variant: normal; font-weight:800;">
+                    {% if site.title == "blank" -%}
+                      <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}
+                    {%- else -%}
+                      {{ site.title }}
+                    {%- endif -%}
+                  </h1>
+                </div>
+                <div style="max-width:140px; flex:0 0 auto;">
+                  {%- assign header_image_path = page.header_image | prepend: 'assets/img/' -%}
+                  {%- assign profile_image_class = "img-fluid z-depth-1 rounded" -%}
+                  {% include figure.html path=header_image_path class=profile_image_class alt=page.header_image -%}
+                </div>
+              {% else %}
+                <div style="max-width:140px; flex:0 0 auto;">
+                  {%- assign header_image_path = page.header_image | prepend: 'assets/img/' -%}
+                  {%- assign profile_image_class = "img-fluid z-depth-1 rounded" -%}
+                  {% include figure.html path=header_image_path class=profile_image_class alt=page.header_image -%}
+                </div>
+                <div style="min-width:180px;">
+                  <h1 class="post-title m-0" style="font-variant: normal; font-weight:800;">
+                    {% if site.title == "blank" -%}
+                      <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}
+                    {%- else -%}
+                      {{ site.title }}
+                    {%- endif -%}
+                  </h1>
+                </div>
+              {% endif %}
+            {% else %}
+              <div>
+                <h1 class="post-title m-0" style="font-variant: normal; font-weight:800;">
+                  {% if site.title == "blank" -%}
+                    <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}
+                  {%- else -%}
+                    {{ site.title }}
+                  {%- endif -%}
+                </h1>
+              </div>
+            {% endif %}
+          </div>
         </header>
 
         <article>
-          {% if page.profile -%}
-          <div class="profile float-{%- if page.profile.align == 'left' -%}left{%- else -%}right{%- endif -%}">
-            {%- if page.profile.image %}
-              {%- assign profile_image_path = page.profile.image | prepend: 'assets/img/' -%}
-
-              {% if page.profile.image_circular %}
-                {%- assign profile_image_class = "img-fluid z-depth-1 rounded-circle" -%}
-              {% else %}
-                {%- assign profile_image_class = "img-fluid z-depth-1 rounded" -%}
-              {% endif %}
-
-              {% include figure.html 
-              path=profile_image_path 
-              class=profile_image_class
-              alt=page.profile.image -%}
-            {% endif -%}
-            {%- if page.profile.address %}
-            <div class="address">
-              {{ page.profile.address }}
-            </div>
-            {%- endif %}
-          </div>
-          {%- endif %}
-
-          <div class="clearfix">
+          <div class="clearfix mt-3">
             {{ content }}
           </div>
 
@@ -73,4 +144,7 @@ layout: default
           {%- endif %}
         </article>
 
+      </div>
+    </main>
+  </div>
 </div>

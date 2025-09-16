@@ -2,41 +2,51 @@
 layout: default
 ---
 <!-- page.html -->
-        <div class="post">
+<div class="container" style="max-width: 100%; margin-left: auto; margin-right: auto;">
+  <div class="row">
+    <aside class="col-md-3 d-none d-md-block">
+      {% include sidebar.html %}
+    </aside>
 
-          <header class="post-header">
-            <h1 class="post-title">{{ page.title }}</h1>
-            <p class="post-description">{{ page.description }}</p>
-          </header>
+    <main class="col-md-10 content-with-sidebar">
+      <div class="post">
 
-          <article class="post-content">
-            {% if page.toc and page.toc.beginning %}
-            <div id="table-of-contents">
-              {% toc %}
-            </div>
-            <hr>
-            {% endif %}
-            <div id="markdown-content">
-              {{ content }}
-            </div>
-          </article>
+        <header class="post-header">
+          <h1 class="post-title">{{ page.title }}</h1>
+          <p class="post-description">{{ page.description }}</p>
+        </header>
 
-          {%- if page.related_publications != null and page.related_publications.size > 0 -%}
-          {% assign publications = page.related_publications | replace: ", ", "," | split: "," | join: "|" %}
-          <h2>References</h2>
-          <div class="publications">
-            {% bibliography -f journal -q @*[key^={{ publications }}]* %}
-            {% bibliography -f conference -q @*[key^={{ publications }}]* %}
-            {% bibliography -f preprint -q @*[key^={{ publications }}]* %}
-            {% bibliography -f technical -q @*[key^={{ publications }}]* %}
+        <article class="post-content">
+          {% if page.toc and page.toc.beginning %}
+          <div id="table-of-contents">
+            {% toc %}
           </div>
-          {%- endif %}
+          <hr>
+          {% endif %}
+          <div id="markdown-content">
+            {{ content }}
+          </div>
+        </article>
 
-          {%- if site.giscus.repo and page.giscus_comments -%}
-            {% include giscus.html %}
-          {%- endif -%}
-          {% if page.talks -%}
-            {% include talks.html %}
-          {%- endif %}
-
+        {%- if page.related_publications != null and page.related_publications.size > 0 -%}
+        {% assign publications = page.related_publications | replace: ", ", "," | split: "," | join: "|" %}
+        <h2>References</h2>
+        <div class="publications">
+          {% bibliography -f journal -q @*[key^={{ publications }}]* %}
+          {% bibliography -f conference -q @*[key^={{ publications }}]* %}
+          {% bibliography -f preprint -q @*[key^={{ publications }}]* %}
+          {% bibliography -f technical -q @*[key^={{ publications }}]* %}
         </div>
+        {%- endif %}
+
+        {%- if site.giscus.repo and page.giscus_comments -%}
+          {% include giscus.html %}
+        {%- endif -%}
+        {% if page.talks -%}
+          {% include talks.html %}
+        {% endif %}
+
+      </div>
+    </main>
+  </div>
+</div>

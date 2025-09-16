@@ -31,18 +31,18 @@ I completed my PhD at IMT Lucca in June 2025, and was fortunate to be supervised
 
 <!-- <p style="margin-bottom:1cm;"></p> -->
 <!-- --- -->
-<h5 style="font-weight: bold; font-family: Verdana, Geneva, Tahoma, 'JuliaMono', sans-serif;"> Research topics </h5>
+<h5> Research topics </h5>
 <!-- --- -->
 
-Mathematical optimization for engineering applications, with a focus on its theoretical foundations, algorithmic development, and practical implementation in machine learning, control systems, and other interdisciplinary domains.
+Mathematical optimization for engineering applications: theoretical foundations, algorithmic development, and practical implementation in machine learning, control systems, and other interdisciplinary domains.
 
 
 <div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
+    <div class="col-sm mt-3 mt-md-0 text-center">
         <a href="{{ site.baseurl }}/publications/" target="_self">
-          <h6 style="text-align: center; font-weight: bold; font-family: Verdana, Geneva, Tahoma, 'JuliaMono', sans-serif;">Publications</h6>
-          <div class="rounded-image-wrapper" style="position: relative;">
-            {% include figure.html path="assets/img/home-image.gif" class="img-fluid z-depth-1" zoomable=false %}
+          <h6 style="text-align: center;">Publications</h6>
+          <div class="rounded-image-wrapper" style="position: relative; max-width: 50%;">
+            {% include figure.html path="assets/img/home-image.gif" class="img-fluid z-depth-0" zoomable=false %}
             <span class="made-with-tikz">Made with TikZ+GIMP</span>
           </div>
         </a>

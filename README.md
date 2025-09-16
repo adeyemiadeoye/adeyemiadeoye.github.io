@@ -1,1 +1,1 @@
-Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>.
+Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>. Theme: <a href="https://github.com/alshedivat/al-folio" target="_blank">al-folio</a> (extensively customized).

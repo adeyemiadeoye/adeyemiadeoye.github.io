@@ -6,7 +6,7 @@ description: A list of research software I have developed or contributed to.
 nav: true
 nav_order: 3
 display_categories: 
-horizontal: false
+horizontal: true
 ---
 
 <div class="software">

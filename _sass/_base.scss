@@ -4,14 +4,15 @@
 
 body {
     // background-color: gainsboro;
-    // background-image: url("/assets/img/white-paper-texture-background.jpg");
+    background-image: url("/assets/img/bg-main-unsplash.jpg");
     background-position: center;
     background-repeat: repeat;
     background-size: contain;
     margin:0; padding:0;
     overflow-x:hidden;
-    height:100%;
-    font-weight: 700;
+    // height:100%;
+    height: 100vh;
+    font-weight: 500;
     font-size: 20px;
     line-height: 1.45;
 }
@@ -72,32 +73,32 @@ body {
 // Typography
 
 p, div { font-family: Verdana, Geneva, Tahoma, 'JuliaMono', sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 14px;
 }
 h1 { font-family: Verdana, Geneva, Tahoma, 'JuliaMono', sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   font-size: x-large;
 }
 h2, em, li, strong { font-family: Verdana, Geneva, Tahoma, 'JuliaMono', sans-serif;
-  font-weight: 700;
+  font-weight: 500;
 }
 h3 { font-family: Verdana, Geneva, Tahoma, 'JuliaMono', sans-serif;
   font-size: 24px;
   font-style: normal;
   font-variant: normal;
-  font-weight: 1000;
+  font-weight: 500;
   line-height: 15.4px;
 }
 h5 { font-family: Verdana, Geneva, Tahoma, 'JuliaMono', sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 22px;
 }
 blockquote { font-family: 'JuliaMono';
   font-size: 17.5px;
   font-style: normal;
   font-variant: normal;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 25px;
 }
 // pre { font-family: 'JuliaMono';
@@ -118,7 +119,7 @@ table {
   }
   td {
     font-size: 1rem;
-    font-weight: 700;
+    font-weight: 500;
   }
 }
 
@@ -211,12 +212,12 @@ blockquote {
   margin-left: 0rem;
 }
 .profile.float-left{
-  margin-right: -8.5rem;
+  margin-right: -10.5rem;
 }
 
 @media (min-width: 576px) {
   .profile {
-    width: 40%;
+    width: 25%;
     .address {
       p { display: block; }
     }
@@ -282,7 +283,7 @@ blockquote {
   }
   .navbar-nav .nav-item.active>.nav-link {
       background-color: inherit;
-      font-weight: bolder;
+      font-weight: bold;
       color: var(--global-theme-color);
       &:hover {
         color: var(--global-hover-color);
@@ -686,7 +687,7 @@ footer.sticky-bottom {
         }
       }
       .title {
-        font-weight: bolder;
+        font-weight: bold;
       }
       .author {
         a {
@@ -773,7 +774,7 @@ footer.sticky-bottom {
       left: 0;
       width: 2em;
       text-align: right;
-      font-weight: 700;
+      font-weight: 500;
     }
   }
 }
@@ -1097,4 +1098,33 @@ katex-inline.keepfont {
   .katex {
       font-size: 1em;
   }
+}
+
+/* Fixed sidebar layout (applies at all viewport sizes) */
+:root {
+  --site-sidebar-width: 260px;
+}
+
+.site-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: var(--site-sidebar-width);
+  height: 100vh;
+  z-index: 1030;
+  overflow-y: auto;
+  padding-right: 0;
+  display: block;
+}
+
+.site-sidebar .sidebar {
+  height: 100%;
+  border-radius: .25rem;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+/* Push main content to the right so it sits beside the fixed sidebar */
+.content-with-sidebar {
+  margin-left: calc(var(--site-sidebar-width) + 0rem);
 }

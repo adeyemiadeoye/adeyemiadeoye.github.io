@@ -1126,5 +1126,16 @@ katex-inline.keepfont {
 
 /* Push main content to the right so it sits beside the fixed sidebar */
 .content-with-sidebar {
+  /* hard fallback for environments where CSS variables might not be available */
+  margin-left: 260px;
+  /* prefer CSS variable when available, with a fallback to 260px */
+  margin-left: var(--site-sidebar-width, 260px);
+  /* legacy calc preserved for compatibility (kept last if needed elsewhere) */
   margin-left: calc(var(--site-sidebar-width) + 0rem);
+}
+
+@media (max-width: 768px) {
+  .content-with-sidebar {
+    margin-left: 0; /* remove offset on small screens where sidebar may be toggled or overlayed */
+  }
 }

@@ -1,8 +1,8 @@
 <aside class="site-sidebar" style="padding-right:0; padding-left:0;">
-  <div class="sidebar d-flex flex-column" style="align-items: flex-start; background-image: url('{{ site.baseurl }}/assets/img/bg-side-1-freepik.jpg'); background-size: cover; background-position: center; padding: .75rem; color: var(--global-theme-color-2); min-height:auto; box-sizing: border-box; width:100%;">
+  <div class="sidebar d-flex flex-column" style="align-items: flex-start; background-image: url('{{ site.baseurl }}/assets/img/bg-side-3-freepik.jpg'); background-size: cover; background-position: center; background-repeat: repeat; overflow-x:hidden; padding: .75rem; min-height:auto; box-sizing: border-box; width:100%;">
     <div class="sidebar-header text-center mb-3" style="width:100%;">
       <img src="{{ site.baseurl }}/assets/img/home-image.png" alt="Navigation" class="img-fluid" style="max-height:70px; display:inline-block;">
-      <h4 class="mt-2 mb-1" style="color: var(--global-theme-color-2);">{%- if site.title == "blank" -%}
+      <h4 class="mt-2 mb-1" style="color:white; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">{%- if site.title == "blank" -%}
         {%- if site.first_name -%}
           {{ site.first_name }}&nbsp;
         {%- endif -%}
@@ -23,17 +23,17 @@
       {%- endif -%}
     {%- endfor -%}
     <ul class="list-unstyled w-100" style="padding:0;">
-      <li class="mb-3 text-center" style="width:100%;"><a href="{{ '/' | relative_url }}" style="color: black; width:100%;">{{ about_title }}</a></li>
+      <li class="mb-3 text-center" style="width:100%;"><a href="{{ '/' | relative_url }}" style="width:100%;">{{ about_title }}</a></li>
 
       {%- assign sorted_pages = site.pages | sort: "nav_order" -%}
       {%- for p in sorted_pages -%}
         {%- if p.nav and p.autogen == nil and p.permalink != '/' -%}
-          <li class="mb-3 text-center" style="width:100%;"><a href="{{ p.url | relative_url }}" style="color: black; width:100%;">{{ p.title }}</a></li>
+          <li class="mb-3 text-center" style="width:100%;"><a href="{{ p.url | relative_url }}" style="width:100%;">{{ p.title }}</a></li>
         {%- endif -%}
       {%- endfor -%}
     </ul>
 
-    <hr style="border-top:1px solid rgba(0,0,0,0.1); width:100%;">
+    <hr style="border-top:1px solid rgba(0,0,0,0.3); width:100%;">
 
     <div class="mb-3 social" style="width:100%; text-align:center; font-size: 20px;">
         <div class="contact-icons">
@@ -41,9 +41,9 @@
         </div>
     </div>
 
-    <hr style="border-top:1px solid rgba(0,0,0,0.05); width:100%;">
+    <hr style="border-top:1px solid rgba(0,0,0,0.3); width:100%;">
 
-    <div class="sidebar-footer text-center small" style="width:100%; color: rgba(0,0,0,0.7);">
+    <div class="sidebar-footer text-center small" style="width:100%; color: black;">
       <p style="margin-bottom:0.25rem;">&copy; {{ site.time | date: '%Y' }} {{ site.first_name }} {{ site.middle_initial }} {{ site.last_name }}.</p>
       <p style="margin-bottom:0.25rem; font-size: x-small;">{{ site.footer_text }}</p>
       {%- if site.impressum_path -%}

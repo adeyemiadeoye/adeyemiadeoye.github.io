@@ -359,7 +359,7 @@ blockquote {
     font-size: 1.4rem;
     a {
       i::before {
-        color: var(--global-text-color);
+        color: black;
         transition-property: all 0.2s ease-in-out;
       }
       &:hover {
@@ -1125,17 +1125,17 @@ katex-inline.keepfont {
 
 .site-sidebar {
   a {
-    color: var(--global-text-color) !important;
+    color: white;
     text-decoration: underline !important;
     // display: block;
     width: 100%;
   }
   a:hover {
-    color: var(--global-hover-color) !important;
+    color: #A52A2A !important;
     text-decoration: underline !important;
   }
   a.active, a[aria-current="page"] {
-    color: var(--global-theme-color) !important;
+    color: #A52A2A !important;
     font-weight: bold;
   }
 }

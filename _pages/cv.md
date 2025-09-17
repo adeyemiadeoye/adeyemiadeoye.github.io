@@ -32,7 +32,7 @@ cv_pdf: Adeyemi_CV.pdf
 
 - B.Sc. in Mathematics (First Class Honors): University of Ilorin, Ilorin, Nigeria (2012-2016)  
     - Final-year project: On Some Finite Difference Methods for Solving Partial Differential Equations (Grade: A)
-    - Level (General) Advisor: [Prof. (Mrs.) Yidiat Omolade Aderinto](https://mathematics.physicalsciences.unilorin.edu.ng/staffmember/prof-mrs-aderinto-omolade-yidiat/)
+    - Level (Academic) Advisor: [Prof. (Mrs.) Yidiat Omolade Aderinto](https://mathematics.physicalsciences.unilorin.edu.ng/staffmember/prof-mrs-aderinto-omolade-yidiat/)
     - Final Project Supervisor: [Dr. Babatunde Morufu Yisa](https://mathematics.physicalsciences.unilorin.edu.ng/staffmember/dr-yisa-babtunde-morufu/)
 
 ---

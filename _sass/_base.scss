@@ -1123,7 +1123,23 @@ katex-inline.keepfont {
   box-sizing: border-box;
 }
 
-/* Push main content to the right so it sits beside the fixed sidebar */
+.site-sidebar {
+  a {
+    color: var(--global-text-color) !important;
+    text-decoration: underline !important;
+    // display: block;
+    width: 100%;
+  }
+  a:hover {
+    color: var(--global-hover-color) !important;
+    text-decoration: underline !important;
+  }
+  a.active, a[aria-current="page"] {
+    color: var(--global-theme-color) !important;
+    font-weight: bold;
+  }
+}
+
 .content-with-sidebar {
   /* hard fallback for environments where CSS variables might not be available */
   margin-left: 260px;

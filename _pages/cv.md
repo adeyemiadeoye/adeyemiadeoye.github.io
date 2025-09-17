@@ -23,7 +23,7 @@ cv_pdf: Adeyemi_CV.pdf
     - Supervisor: [Prof. Alberto Bemporad](http://cse.lab.imtlucca.it/~bemporad/)
 
 - M.Sc. in Mathematical Sciences (Machine Intelligence): African Institute for Mathematical Sciences, Rwanda (Oct 2019 - Mar 2021)  
-    - Final report: [A Deep Neural Network Optimization Method via a Highway Traffic Model](https://adeyemiadeoye.github.io/assets/pdf/adeoye-petersen-2021.pdf) (Grade: Very Good Pass)  
+    - Final report: <a href="https://adeyemiadeoye.github.io/assets/pdf/adeoye-petersen-2021.pdf" target="_blank">A Deep Neural Network Optimization Method via a Highway Traffic Model</a> (Grade: Very Good Pass)
     - Supervisor: [Prof. Philipp Petersen](https://scholar.google.com/citations?hl=en&user=Huw7cHIAAAAJ)
 
 - M.Sc. in Mathematical Sciences: African Institute for Mathematical Sciences, Cameroon (2017 - 2018)  

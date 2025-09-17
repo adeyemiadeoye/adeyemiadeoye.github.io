@@ -1,8 +1,8 @@
 <aside class="site-sidebar" style="padding-right:0; padding-left:0;">
-  <div class="sidebar d-flex flex-column" style="align-items: flex-start; background-image: url('{{ site.baseurl }}/assets/img/bg-side-1-freepik.jpg'); background-size: cover; background-position: center; border-radius: .25rem; padding: .75rem; color: var(--global-theme-color-2); min-height:auto; box-sizing: border-box; width:100%;">
+  <div class="sidebar d-flex flex-column" style="align-items: flex-start; background-image: url('{{ site.baseurl }}/assets/img/bg-side-1-freepik.jpg'); background-size: cover; background-position: center; padding: .75rem; color: var(--global-theme-color-2); min-height:auto; box-sizing: border-box; width:100%;">
     <div class="sidebar-header text-center mb-3" style="width:100%;">
       <img src="{{ site.baseurl }}/assets/img/home-image.png" alt="Navigation" class="img-fluid" style="max-height:70px; display:inline-block;">
-      <h4 class="mt-2 mb-1" style="color: black;">{%- if site.title == "blank" -%}
+      <h4 class="mt-2 mb-1" style="color: var(--global-theme-color-2);">{%- if site.title == "blank" -%}
         {%- if site.first_name -%}
           {{ site.first_name }}&nbsp;
         {%- endif -%}
@@ -23,12 +23,12 @@
       {%- endif -%}
     {%- endfor -%}
     <ul class="list-unstyled w-100" style="padding:0;">
-      <li class="mb-3 text-center" style="width:100%;"><a href="{{ '/' | relative_url }}" style="color: black; display:block; width:100%;">{{ about_title }}</a></li>
+      <li class="mb-3 text-center" style="width:100%;"><a href="{{ '/' | relative_url }}" style="color: black; width:100%;">{{ about_title }}</a></li>
 
       {%- assign sorted_pages = site.pages | sort: "nav_order" -%}
       {%- for p in sorted_pages -%}
         {%- if p.nav and p.autogen == nil and p.permalink != '/' -%}
-          <li class="mb-3 text-center" style="width:100%;"><a href="{{ p.url | relative_url }}" style="color: black; display:block; width:100%;">{{ p.title }}</a></li>
+          <li class="mb-3 text-center" style="width:100%;"><a href="{{ p.url | relative_url }}" style="color: black; width:100%;">{{ p.title }}</a></li>
         {%- endif -%}
       {%- endfor -%}
     </ul>

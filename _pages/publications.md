@@ -11,7 +11,7 @@ nav_order: 1
 <!-- _pages/publications.md -->
 <div style="font-size: small; margin-top: -1rem;">See also:
 <span class="links" style="text-transform: lowercase; font-size: x-small;">
-<a href="https://scholar.google.com/citations?user=G8fKpqwAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" class="ai ai-google-scholar" role="button">Google Scholar Profile</a>
+<a href="https://scholar.google.com/citations?user=G8fKpqwAAAAJ" target="_blank" class="ai ai-google-scholar" role="button">Google Scholar Profile</a>
 </span>
 </div>
 

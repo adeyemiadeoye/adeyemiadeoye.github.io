@@ -45,15 +45,15 @@ cv_pdf: CV.pdf
 
 ### Honors & Awards
 
-- **Research Fellowship**: ERC-AdG-2023 COMPACT (PI: Prof. Alberto Bemporad), (2025)
-- **Erasmus+ Traineeship Grant**: The European Commission at IMT Lucca, Italy, (2023)
-- **Ph.D. Studentship**: IMT School for Advanced Studies Lucca, Italy, (2020)
-- **Graduate Scholarship**: Google and Facebook (now Meta) at AIMS-AMMI, Rwanda, (2019)
-- **Mastercard Foundation Scholarship**: African Institute for Mathematical Sciences, Cameroon, (2017)
-- **Academic Award of Excellence**: Kwara Class of Honors, Kwara, Nigeria, (Dec 2016)
-- **Silver Medal**: National Mathematics Competition for University Students (NAMCUS), National Mathematical Center (NMC), Abuja, Nigeria, (Apr 2016)
-- **Undergraduate Scholarship**: MTN Foundation (MTNF) Scholarship Scheme, Nigeria, (2014-2016)
-- **Miscellaneous**: Several prizes and commendations at inter‑school, state, and national primary- and high-school mathematics competitions in Nigeria (2003-2011)
+- **Research Fellowship**, 2025: ERC-AdG-2023 COMPACT (PI: Prof. Alberto Bemporad)
+- **Erasmus+ Traineeship Grant**, 2023: The European Commission at IMT Lucca, Italy
+- **Ph.D. Studentship**, 2020: IMT School for Advanced Studies Lucca, Italy
+- **Graduate Scholarship**, 2019: Google and Facebook (now Meta) at AIMS-AMMI, Rwanda
+- **Mastercard Foundation Scholarship**, 2017: African Institute for Mathematical Sciences, Cameroon
+- **Academic Award of Excellence**, Dec 2016: Kwara Class of Honors, Kwara, Nigeria
+- **Silver Medal**, Apr 2016: National Mathematics Competition for University Students (NAMCUS), National Mathematical Center (NMC), Abuja, Nigeria
+- **Undergraduate Scholarship**, 2014-2016: MTN Foundation (MTNF) Scholarship Scheme, Nigeria
+- **Miscellaneous**, between 2003-2011: Several prizes and commendations at inter‑school, state, and national primary- and high-school mathematics competitions in Nigeria
 
 ---
 

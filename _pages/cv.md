@@ -12,7 +12,7 @@ cv_pdf: CV.pdf
 
 - Full Name: Adeyemi Damilare Adeoye
 - Current Position: Research Fellow, DYSCO (Dynamical Systems, Control and Optimization), IMT School for Advanced Studies Lucca, Italy
-- Contact: adeyemi{DOT}adeoye{AT}imtlucca{DOT}it / adadeoye{AT}yahoo{DOT}com
+- Contact Info: adeyemi{DOT}adeoye{AT}imtlucca{DOT}it / adadeoye{AT}yahoo{DOT}com
 - Research Topics: Mathematical optimization, machine learning, control systems, scientific computing, interdisciplinary applications
 
 ---

@@ -59,7 +59,7 @@ cv_pdf: CV.pdf
 
 ### Computer Skills
 
-- Programming (main): Python, Julia, LaTeX, SageMath, Maxima
+- Programming (main languages): Python, Julia, LaTeX, SageMath, Maxima
 - Frameworks: JAX, PyTorch, TensorFlow, FluxML, SciML, JuMP.jl, JuliaDiff, NumPy, SciPy, pandas
 - Toolbox: Visual Studio Code, PyCharm, JupyterLab, GitHub, TeXstudio, wxMaxima
 - Operating Systems: Linux, Windows

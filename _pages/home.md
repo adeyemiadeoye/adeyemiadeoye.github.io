@@ -23,16 +23,3 @@ social: false  # includes social icons at the bottom of the page
 ---
 
 I am currently a Research Fellow in the Dynamical Systems, Control, and Optimization (<a href="https://dysco.imtlucca.it/" target="_blank">DYSCO</a>) group at IMT Lucca (Italy) working on an ERC Advanced Grant project led by <a href="http://cse.lab.imtlucca.it/~bemporad/" target="_blank">Prof. Alberto Bemporad</a>. My research focuses on mathematical optimization for engineering applications, spanning theoretical foundations, algorithm design, and practical implementations in machine learning, control systems, and interdisciplinary domains.
-
-
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0 text-center">
-        <a href="{{ site.baseurl }}/publications/" target="_self">
-          <h6 style="text-align: center;">Publications</h6>
-          <div class="rounded-image-wrapper" style="position: relative; max-width: 30%;">
-            {% include figure.html path="assets/img/home-image.gif" class="img-fluid z-depth-0" zoomable=false %}
-            <span class="made-with-tikz">Made with TikZ+GIMP</span>
-          </div>
-        </a>
-    </div>
-</div>

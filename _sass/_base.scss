@@ -1136,11 +1136,17 @@ katex-inline.keepfont {
   display: block;
 }
 
+
 .site-sidebar .sidebar {
   height: 100%;
   border-radius: .25rem;
   padding: 1rem;
   box-sizing: border-box;
+  background-color: rgba(0,0,0,0.08); /* quick neutral fallback */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  will-change: transform; /* hint to the browser for smoother paint */
 }
 
 .site-sidebar {

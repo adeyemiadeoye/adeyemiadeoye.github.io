@@ -1,7 +1,7 @@
 <aside class="site-sidebar" style="padding-right:0; padding-left:0;">
-  <div class="sidebar d-flex flex-column" style="align-items: flex-start; background-image: url('{{ site.baseurl }}/assets/img/bg-side-3-freepik.jpg'); background-size: cover; background-position: center; background-repeat: repeat; overflow-x:hidden; padding: .75rem; min-height:auto; box-sizing: border-box; width:100%;">
+  <div class="sidebar d-flex flex-column" style="align-items: flex-start; background-image: url('{{ site.baseurl }}/assets/img/bg-side-3-freepik.jpg'); background-size: cover; background-position: center; background-repeat: repeat; overflow-x:hidden; padding: .75rem; min-height:100vh; box-sizing: border-box; width:100%;">
     <div class="sidebar-header text-center mb-3" style="width:100%;">
-      <img src="{{ site.baseurl }}/assets/img/home-image.png" alt="Navigation" class="img-fluid" style="max-height:70px; display:inline-block;">
+      <img src="{{ site.baseurl }}/assets/img/home-image.png" alt="Navigation" class="img-fluid" style="max-height:70px; display:inline-block;" loading="eager" fetchpriority="high">
       <h4 class="mt-2 mb-1" style="color:white; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">{%- if site.title == "blank" -%}
         {%- if site.first_name -%}
           {{ site.first_name }}&nbsp;
